@@ -27,7 +27,19 @@ description:           >
   with a focus on personal sites that are meant to impress.
 
 # A shorter description for the sidebar.
-tagline:               Change `tagline` in `_config.yml`
+tagline:               "
+		![Java](https://img.shields.io/badge/-Java-orange)	
+		![SpringBoot](https://img.shields.io/badge/-SpringBoot-green)
+		![MySQL](https://img.shields.io/badge/-MySQL-blue)
+		![Mongo](https://img.shields.io/badge/-Mongo-brightgreen)
+		![Vue](https://img.shields.io/badge/-Vue-%2342b883)
+		![React](https://img.shields.io/badge/-React-%231f232a)
+		![Redis](https://img.shields.io/badge/-Redis-red)
+		![Docker](https://img.shields.io/badge/-Docker-0db7ed)
+
+		<br>		
+		![algorithm tier](http://mazassumnida.wtf/api/mini/generate_badge?boj=jig7357)
+		"
 
 # A list of keywords for your blog
 keywords:              []
@@ -35,7 +47,7 @@ keywords:              []
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  ../assets/img/logo.png
+logo:                  /assets/img/logo.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
@@ -353,7 +365,7 @@ plugins:
 #   name:                <firstname> <lastname>
 #   links:
 #     - https://twitter.com/<username>
-#     - https://github.com/<username>
+#     - https://github.com/1n9yun
 
 
 # Plugin Configs
