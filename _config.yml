@@ -10,7 +10,7 @@ url:	https://1n9yun.github.io
 # with a leading `/` but no trailing `/`. Use the empty string '' otherwise.
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
 # baseurl:               '/hydejack-starter-kit'
-baseurl:	'/hydejack-start-kit'
+baseurl:	''
 
 # General settings
 # ---------------------------------------------------------------------------------------
