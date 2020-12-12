@@ -19,20 +19,20 @@ Version 9 is the most complete version of Hydejack yet.
 ## Linking in Style
 
 Ever since the introduction of Dark Mode, link styles have been a bit of an issue. Specifically, finding an accent color that worked on both light and dark backgrounds was the problem. With Hydejack 9, the [link style](#linking-in-style) has been revamped so that legibility is no longer tied to the choice of accent_color, giving you much more freedom in creating a unique design flavor for your site.
- 
+
 ## Ready for the Big Screen
 
 The theme on which Hydejack is based was designed for a different era of the web. Hydejack has inherited many of its limitations, but over time I've made adjustments, such as centering the content column for better reading ergonomics. 
 
 With version 9, Hydejack takes full advantage of large displays. Whether it's design indulgences such as oversized headlines, or quality of life improvements such as a floating table of contents, Hydejack now finds use for all that extra screen real estate[^1]. 
- 
+
 ## What's in the Cards?
 
 Hydejack 9 now lets you use content cards for both projects and posts. 
 The cards have been redesigned with a new hover style and drop shadows and they retain their unique transition-to-next-page animations, which now also work on the `blog` layout. The new `grid` layout lets you do that.
 
 Good images are key to making the most out of content cards. For that reason, a [chapter on images](../../docs/basics.md#adding-images) has been added to the documentation.
- 
+
 ## Built-In Search
 
 Hydejack now has Built-In Search. It even works offline. I've been prototyping many approaches and eventually settled on a fully client-side, off-the-main thread solution that perfectly fits the use case of personal sites and shows surprisingly good results[^2]. 
@@ -40,16 +40,16 @@ Hydejack now has Built-In Search. It even works offline. I've been prototyping m
 The new search UI is custom made for Hydejack and shows beautiful previews of your posts and pages, right on top of your regular content.
 
 Together with the Auto-Hiding Navbar, your entire content library is now only a couple of keystrokes away.
- 
+
 ## Auto-Hiding Navbar
 
 A navbar that's there when you need it, and disappears when you don't. Simple as that.
- 
+
 ## Sticky Table of Contents
 
 Already a staple on so many sites on the web, this pattern is now also available in Hydejack. 
 What's unique about it is that it simply picks up the table of contents already created by kramdown's `{:toc}` tag and transparently upgrades it to a fully dynamic version.
- 
+
 ## …and much more
 
 Other noteworthy changes include:
@@ -61,11 +61,11 @@ Other noteworthy changes include:
 
 Read the the [CHANGELOG](../../CHANGELOG.md){:.heading.flip-title} for the full scope of features and improvements made in Hydejack 9.
 Maybe just glance at it to confirm that it is indeed a pretty long list.
- 
+
 ## Even More to Come
 
 New features for 9.1 are already lined up. Code block headers and code line highlights for even better technical blogging, as well as download buttons on the resume page for PDF, vCard, and Resume JSON are just around the corner.
- 
+
 ## Get It Now
 The Free Version of Hydejack is now availabe on [RubyGems](https://rubygems.org/gems/jekyll-theme-hydejack)
 and for the first time also on [GitHub Packages](https://github.com/hydecorp/hydejack/packages). 
