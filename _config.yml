@@ -15,7 +15,7 @@
 
 # Language of your content in 2-letter code, e.g.: en, de.
 # You may also provide a location, e.g.: en-us, de_AT.
-lang:                  en
+lang:                  ko-KR, en-US
 
 # The title of your blog. Used in the sidebar and the browser tab.
 title:                 1n9yun
@@ -31,12 +31,13 @@ tagline:               "
 		![Java](https://img.shields.io/badge/-Java-orange)	
 		![SpringBoot](https://img.shields.io/badge/-SpringBoot-green)
 		![MySQL](https://img.shields.io/badge/-MySQL-blue)
+    ![MariaDB](https://img.shields.io/badge/-MariaDB-blue)
 		![Mongo](https://img.shields.io/badge/-Mongo-brightgreen)
 		![Redis](https://img.shields.io/badge/-Redis-red)
 		![Vue](https://img.shields.io/badge/-Vue-%2342b883)
 		<!-- ![React](https://img.shields.io/badge/-React-%231f232a) -->
 		![Docker](https://img.shields.io/badge/-Docker-0db7ed)
-
+    
 		<br>		
 		![algorithm tier](/assets/algorithm_tier.svg)
 		"
@@ -59,9 +60,9 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             Example
-    url:               /example/
-  - title:             Documentation
+  - title:             Project
+    url:               /project/
+  - title:             Documantation
     url:               /docs/
   - title:             About
     url:               /about/
@@ -125,15 +126,15 @@ theme_color:           rgb(8,46,57)
 
 # The string encoding which fonts to fetch from Google Fonts.
 # See: <https://hydejack.com/docs/configuration/>
-google_fonts:          Roboto+Slab:700|Noto+Sans:400,400i,700,700i
+google_fonts:          Nanum+Gothic|Roboto+Slab:700|Noto+Sans:400,400i,700,700i
 
 # The text font. Expects a string that is a valid CSS font-family value.
 # To change font-weight, see _sass/variables.scss
-font:                  Noto Sans, Helvetica, Arial, sans-serif
+font:                  Nanum Gothic, Noto Sans, Helvetica, Arial, sans-serif
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
 # To change font-weight, see _sass/variables.scss
-font_heading:          Roboto Slab, Helvetica, Arial, sans-serif
+font_heading:          Nanum Gothic, Roboto Slab, Helvetica, Arial, sans-serif
 
 # The font used for code blocks. Expects a string that is a valid CSS font-family value.
 font_code:             Fira Code, Menlo, Monaco, Consolas, monospace;
@@ -213,7 +214,7 @@ kramdown:
 
 hydejack:
   # Configure the order of complementary content on blog posts
-  post_addons:         [about, newsletter, related, random, comments]
+  post_addons:         [related, about, newsletter, random, comments]
 
   # Configure the order of complementary content on project pages
   project_addons:      [about, newsletter, other, comments]
