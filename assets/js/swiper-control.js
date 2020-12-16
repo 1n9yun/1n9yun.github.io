@@ -4,14 +4,15 @@ function getSlideElementList(path, imgList, dotted){
     imgList.forEach(imgName => 
         innerHTML += 
         `<div class="swiper-slide">
-            <img src="/assets` + path + `/` + imgName + `" style="width:100%">
+            <img src="/assets` + path + `/` + imgName + `" style="width:100%" class="swiper-lazy">
+            <div class="swiper-lazy-preloader"></div>
         </div>`
     )
     innerHTML += `</div>`;
     if(dotted) innerHTML += `<div class="swiper-pagination"></div>`
     innerHTML += `<div class="swiper-button-next"></div>`
     innerHTML += `<div class="swiper-button-prev"></div>`
-
+    
     return innerHTML;
 }
 
@@ -32,6 +33,7 @@ function swiperInitialize(container_id, props){
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         },
+        lazy: true
       });
 }
 
