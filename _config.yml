@@ -65,17 +65,21 @@ menu:
   - title:             Document
     url:               /docs/
     submenu:           
-      - title:           Sub Test 1
-        url:             /404/
-      - title:           Sub Test 2
-        url:             /404/
+      - title:           Java
+        url:             /docs/java/
+      - title:           Spring
+        url:             /docs/spring/
+      - title:           Computer Science
+        url:             /docs/computer-science
+  - title:             Algorithm
+    url:               /algorithm/
+    submenu:
+      - title:           Theory
+        url:             /algorithm/theory/
+      - title:           Problem Solving
+        url:             /algorithm/problem-solving/
   - title:             About
     url:               /about/
-    submenu:
-      - title:           Sub Test 3
-        url:             /404/
-      - title:           Sub Test 4
-        url:             /404/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
