@@ -62,7 +62,7 @@ author:
 menu:
   - title:             Project
     url:               /project/
-  - title:             Document
+  - title:             Docs
     url:               /docs/
     submenu:           
       - title:           Java

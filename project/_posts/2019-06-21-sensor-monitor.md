@@ -27,13 +27,14 @@ comments: true
 # 소개
 <div id="sensor-monitor-carousel" class="swiper-container"></div>
 <script>
-  let imgList = [];
+  imgList = [];
   for(let i=1;i<=8;i++){
     imgList.push("MonitorApp_Usage_Private-" + i + ".jpg");
   }
   swiperInitialize("sensor-monitor-carousel", {
     path: "/img/project/sensor-monitor",
     imgList: imgList,
+    size: "100%",
     dotted: false,
     millis: 5000
   })
