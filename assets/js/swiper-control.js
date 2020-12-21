@@ -37,7 +37,8 @@ function swiperInitialize(container_id, props){
           loadPrevNext: true
         },
         preloadImages: true,
-        updateOnImagesReady: true
+        updateOnImagesReady: true,
+        watchSlidesProgress: true
       });
 }
 
