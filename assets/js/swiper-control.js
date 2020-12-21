@@ -4,7 +4,7 @@ function getSlideElementList(path, imgList, dotted){
     imgList.forEach(imgName => 
         innerHTML += 
         `<div class="swiper-slide">
-            <img data-src="/assets` + path + `/` + imgName + `" style="width:100%" class="swiper-lazy">
+            <img src="/assets` + path + `/` + imgName + `" style="width:100%" class="swiper-lazy">
             <div class="swiper-lazy-preloader"></div>
         </div>`
     )
