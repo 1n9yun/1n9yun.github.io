@@ -34,7 +34,7 @@ function swiperInitialize(container_id, props){
           prevEl: '.swiper-button-prev',
         },
         lazy: true,
-        preloadImages: true
+        preloadImages: false
       });
 }
 
