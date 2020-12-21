@@ -35,7 +35,9 @@ function swiperInitialize(container_id, props){
         },
         lazy: {
           loadPrevNext: true
-        }
+        },
+        preloadImages: true,
+        updateOnImagesReady: true
       });
 }
 
