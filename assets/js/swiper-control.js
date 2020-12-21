@@ -36,7 +36,6 @@ function swiperInitialize(container_id, props){
         lazy: {
           loadPrevNext: true
         },
-        preloadImages: false
       });
 }
 
