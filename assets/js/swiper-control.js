@@ -22,7 +22,7 @@ function swiperInitialize(container_id, props){
         spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
-          delay: 2500,
+          delay: props.millis,
           disableOnInteraction: false,
         },
         pagination: {
