@@ -7,15 +7,6 @@
       <li>
         <div class="menu-wrapper">
         {% if node.submenu %}
-        <script>
-            function spread(count){
-                document.getElementById('folder-checkbox-' + count).checked = 
-                !document.getElementById('folder-checkbox-' + count).checked
-                document.getElementById('spread-icon-' + count).innerHTML = 
-                document.getElementById('spread-icon-' + count).innerHTML == 'arrow_right' ?
-                'arrow_drop_down' : 'arrow_right'
-            }
-        </script>
         <button class="spread-btn" onclick="javascript:spread({{count}})">
             <span id="spread-icon-{{count}}" class="spread material-icons">arrow_right</span>
         </button>
