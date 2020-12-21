@@ -39,3 +39,37 @@
   -webkit-align-items: center;
   align-items: center;
 }
+
+.spread-btn{
+  left: 7%;
+  position: absolute;
+  padding: 0;
+  padding-top: 2px;
+  border: none;
+  background: none;
+  color: white;
+  cursor: pointer;
+}
+
+.spread-btn:hover{
+  color: grey;
+}
+
+.menu-wrapper{
+  display: flex;
+  text-align: left;
+  margin-left: 10%;
+
+  input[type=checkbox]{
+    display: none;
+  }
+  input[type=checkbox] ~ ul{
+    list-style: none;
+  }
+  input[type=checkbox] ~ ul{
+    display: none;
+  }
+  input[type=checkbox]:checked ~ ul{
+    display: inline;
+  }
+}
