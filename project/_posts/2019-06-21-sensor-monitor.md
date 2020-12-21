@@ -27,8 +27,8 @@ comments: true
 # 소개
 <div id="sensor-monitor-carousel" class="swiper-container"></div>
 <script>
-  var imgList = []
-  for(var i=1;i<=8;i++){
+  let imgList = [];
+  for(let i=1;i<=8;i++){
     imgList.push("MonitorApp_Usage_Private-" + i + ".jpg");
   }
   swiperInitialize("sensor-monitor-carousel", {
