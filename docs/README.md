@@ -8,9 +8,9 @@ hide_description: false
 <!-- blank -->
 
 ## Category
-[Java]{:.heading.flip-title} --- java  
-[Spring]{:.heading.flip-title} --- spring  
-[Computer Science]{:.heading.flip-title} --- cs  
+* [Java]{:.heading.flip-title} --- java  
+* [Spring]{:.heading.flip-title} --- spring  
+* [Computer Science]{:.heading.flip-title} --- cs  
 
 [java]: java
 [spring]: spring
