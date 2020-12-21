@@ -5,7 +5,7 @@ function getSlideElementList(path, imgList, dotted){
         innerHTML += 
         `<div class="swiper-slide">
             <img src="/assets` + path + `/` + imgName + `" style="width:100%" class="swiper-lazy">
-            <div class="swiper-lazy-preloader"></div>
+            <div class="swiper-lazy-preloader" style="width:100%;height:100%"></div>
         </div>`
     )
     innerHTML += `</div>`;
@@ -33,9 +33,8 @@ function swiperInitialize(container_id, props){
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         },
-        lazy: {
-          loadPrevNext: true
-        },
+        lazy: true,
+        preloadImages: true
       });
 }
 
