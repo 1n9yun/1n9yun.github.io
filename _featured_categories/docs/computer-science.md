@@ -4,7 +4,12 @@ category: docs
 title: Computer Science
 description: >
   공부한 것들을 정리합니다.
-hide_description: false
+related_posts:
+  - 
+addons:
+  - related
+  - comments
+list: true
 ---
 <!-- blank -->
 

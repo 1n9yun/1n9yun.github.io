@@ -70,7 +70,7 @@ menu:
       - title:           Spring
         url:             /spring/
       - title:           Computer Science
-        url:             /computer-science
+        url:             /computer-science/
   - title:             Algorithm
     url:               /algorithm/
     submenu:

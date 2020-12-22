@@ -3,7 +3,9 @@ layout: tag-list
 type: tag
 title: Database
 slug: database
-category: computer-science
+category: 
+   - docs
+   - computer-science
 sidebar: true
 order: 1
 description: >

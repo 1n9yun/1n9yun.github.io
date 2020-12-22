@@ -2,8 +2,10 @@
 layout: tag-list
 type: tag
 title: Operating System
-slug: operating system
-category: computer-science
+slug: operating-system
+category: 
+   - docs
+   - computer-science
 sidebar: true
 order: 1
 description: >

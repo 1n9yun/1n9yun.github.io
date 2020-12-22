@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: list
 type: category
 title: Docs
 description: >
