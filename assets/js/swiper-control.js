@@ -1,10 +1,11 @@
-var swiper;
-function getSlideElementList(path, imgList, dotted){
+let swiper;
+let imgList;
+function getSlideElementList(path, imgList, dotted, size){
     var innerHTML = `<div class="swiper-wrapper">`;
     imgList.forEach(imgName => 
         innerHTML += 
         `<div class="swiper-slide">
-            <img src="/assets` + path + `/` + imgName + `" style="width:100%" class="swiper-lazy">
+            <img src="/assets` + path + `/` + imgName + `" style="width:` + size + `; min-width: 300px" class="swiper-lazy">
             <div class="swiper-lazy-preloader"></div>
         </div>`
     )
@@ -17,7 +18,7 @@ function getSlideElementList(path, imgList, dotted){
 }
 
 function swiperInitialize(container_id, props){
-    document.getElementById(container_id).innerHTML = getSlideElementList(props.path, props.imgList, props.dotted);
+    document.getElementById(container_id).innerHTML = getSlideElementList(props.path, props.imgList, props.dotted, props.size);
     swiper = new Swiper('.swiper-container', {
         spaceBetween: 30,
         centeredSlides: true,
