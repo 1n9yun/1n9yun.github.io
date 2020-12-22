@@ -8,7 +8,8 @@ title: DS Test 1
 description: >
 related_posts:
   - 
-  # - project/_posts/2012-02-07-test-content.md
+  - _posts/Docs/Computer Science/Data Structure/2019-06-21-data-structure-test.md
+  
 comments: true
 ---
 <!-- blank -->

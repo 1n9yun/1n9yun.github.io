@@ -18,7 +18,7 @@ description: >
   ![Android](https://img.shields.io/badge/-Android-green)
 related_posts:
   - 
-  # - project/_posts/2012-02-07-test-content.md
+  # - _posts/Project/2019-06-21-sensor-monitor.md
 comments: true
 ---
 <!-- blank -->
