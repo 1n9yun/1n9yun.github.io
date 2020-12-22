@@ -1,5 +1,5 @@
 ---
-layout: list
+layout: post
 type: category
 title: Docs
 description: >
@@ -13,6 +13,6 @@ hide_description: false
 * [Spring]{:.heading.flip-title} --- spring  
 * [Computer Science]{:.heading.flip-title} --- cs  
 
-[java]: java
-[spring]: spring
-[computer science]: computer-science
+[java]: /java/
+[spring]: /spring/
+[computer science]: /computer-science/

@@ -66,18 +66,18 @@ menu:
     url:               /docs/
     submenu:           
       - title:           Java
-        url:             /docs/java/
+        url:             /java/
       - title:           Spring
-        url:             /docs/spring/
+        url:             /spring/
       - title:           Computer Science
-        url:             /docs/computer-science
+        url:             /computer-science
   - title:             Algorithm
     url:               /algorithm/
     submenu:
       - title:           Theory
-        url:             /algorithm/theory/
+        url:             /theory/
       - title:           Problem Solving
-        url:             /algorithm/problem-solving/
+        url:             /problem-solving/
   - title:             About
     url:               /about/
 
@@ -111,7 +111,7 @@ collections:
     output:            true
 
   featured_tags:
-    permalink:         /tag-:name/
+    permalink:         /:name/
     output:            true
 
   projects:
