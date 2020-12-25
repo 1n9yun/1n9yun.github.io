@@ -78,6 +78,15 @@ menu:
         url:             /theory/
       - title:           Problem Solving
         url:             /problem-solving/
+  - title:             Log
+    url:               /log/
+    submenu:
+      - title:           Develop
+        url:             /develop/
+      - title:           Book
+        url:             /book/
+      - title:           Guitar
+        url:             /guitar/
   - title:             About
     url:               /about/
 
