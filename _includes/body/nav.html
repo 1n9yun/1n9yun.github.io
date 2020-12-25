@@ -28,7 +28,7 @@
                 <li>
                     <a
                         class="sidebar-nav-item {% if node.external  %}external{% endif %}"
-                        href="/{% include_cached smart-url url=subnode.url %}"
+                        href="{% include_cached smart-url url=subnode.url %}"
                         >
                         {{ subnode.title }}
                     </a>

@@ -4,5 +4,10 @@ category: docs
 title: Spring
 description: >
   공부한 것들을 정리합니다.
-hide_description: false
+related_posts:
+  - 
+addons:
+  - related
+  - comments
+list: true
 ---

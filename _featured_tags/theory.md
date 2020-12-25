@@ -3,7 +3,8 @@ layout: tag-list
 type: tag
 title: Theory
 slug: theory
-category: algorithm
+category: 
+   - algorithm
 sidebar: true
 order: 1
 description: >
