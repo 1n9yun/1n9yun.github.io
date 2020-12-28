@@ -1,7 +1,7 @@
 ---
 layout: post
 category: project
-title: Sensor Monitor - 고장 진단 시스템
+title: Sensor Monitor - 고장 진단 프로그램
 description: >
   --- 2019. 06. 21. ~ 2019. 10. 18.
   <br>
