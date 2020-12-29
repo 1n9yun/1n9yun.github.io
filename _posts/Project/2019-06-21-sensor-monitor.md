@@ -25,7 +25,7 @@ comments: true
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
-# 소개
+## 소개
 <div id="sensor-monitor-carousel" class="swiper-container"></div>
 <script>
   imgList = [];
@@ -41,5 +41,5 @@ comments: true
   })
 </script>
 
-## 구조
+### 구조
 ![Architecture](/assets/img/project/sensor-monitor/architecture.png)
