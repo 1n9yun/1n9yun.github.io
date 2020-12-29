@@ -45,6 +45,13 @@ code{
   align-items: center;
 }
 
+.swiper-button-prev::after, .swiper-button-next::after{
+  color: #64ADFF;
+}
+.swiper-button-prev:hover::after, .swiper-button-next:hover::after{
+  color: #007AFF;
+}
+
 // for spread sub menu
 .spread-btn{
   left: 7%;
