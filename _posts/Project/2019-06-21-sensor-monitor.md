@@ -42,7 +42,7 @@ comments: true
 
 ### 주요 기능
 * [**라이센스 키**](javascript:swiper.slideTo(0)) 생성 / 등록
-* 센서 보드가 연결된 **Hub**로 **Broadcasting** 후 센서 별 데이터 수집
+* 센서 보드가 연결된 허브에 **Broadcasting** 후 센서 별 데이터 수집
 * 서버 사용이 불가능한 이유로 **LocalDB**를 사용
 * 날짜 / 센서 종류 별 데이터 [**그래프로 시각화**](javascript:swiper.slideTo(6))
   * 마우스 포인터 위치 데이터의 [**상세 정보 확인**](javascript:swiper.slideTo(7))
