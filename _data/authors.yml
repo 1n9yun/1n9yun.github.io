@@ -20,6 +20,13 @@ author1:
       1x:            https://placehold.it/128x128
       2x:            https://placehold.it/256x256
 
+  # picture:
+  #   path:            /assets/img/128x128.jpg
+  #   # srcset is optional, but can be used to provide higher res versions for retina displays
+  #   srcset:
+  #     1x:            /assets/img/128x128.jpg
+  #     2x:            /assets/img/256x256.jpg
+
   # Social media icons in sidebar
   # Comment/uncommet to show/hide
   # Rearrange to change the order in which they appear
