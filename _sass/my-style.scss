@@ -90,3 +90,23 @@ code{
     display: block;
   }
 }
+
+// for my collapsible
+.collapsible-title:hover {
+  cursor: pointer;
+
+  #section > span{
+    text-shadow: 2px 2px 2px gray; 
+  }
+}
+.collapsible-body[open]{
+  display: block;
+}
+.collapsible-body{
+  display: none;
+}
+
+.collapsible-mark{
+  display: inline-block;
+  width: 30px;
+}
