@@ -17,6 +17,9 @@ comments: true
 ---
 <!-- blank -->
 
+* toc
+{:toc}
+
 ## Prerequisite
 * [RubyInstaller](https://rubyinstaller.org/downloads/){:target="_blank"} 에서 `ruby+devkit` 설치  
 

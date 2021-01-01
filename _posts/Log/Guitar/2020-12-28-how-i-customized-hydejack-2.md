@@ -17,7 +17,7 @@ comments: true
 <!-- blank -->
 ![hydejack-sub-menu](/assets/img/log/guitar/hydejack-1.png)
 
-0. toc
+* toc
 {:toc}
 
 ## 수정/추가한 파일
