@@ -160,3 +160,7 @@ resume:
     languages:         icon-bubbles
     skills:            icon-wrench
     interests:         icon-heart
+
+post:
+  ps:
+    imgpath:           /assets/img/problem-solving

@@ -78,15 +78,10 @@ code{
     display: none;
   }
   input[type=checkbox] ~ ul{
-    // position: absolute;
-    // right: -100px;
     display: none;
     list-style: none;
   }
   input[type=checkbox]:checked ~ ul{
-    // position: relative;
-    // right: 0;
-    // transition: right 1s;
     display: block;
   }
 }
@@ -112,6 +107,15 @@ code{
 }
 
 // for my class
-.my-50{
-  margin: 50px 0;
+.collapsible-body > p > img{
+
+  padding: 5% 4%;
+}
+
+.ps-problem-img:hover{
+  opacity: 0.5;
+}
+
+a::after{
+  display: none;
 }
