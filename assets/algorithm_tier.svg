@@ -21,7 +21,7 @@
             }
             @keyframes expBarAnimation {
                 from {
-                    stroke-dashoffset: 185.45;
+                    stroke-dashoffset: 40.1;
                 }
                 to {
                     stroke-dashoffset: 35;
@@ -46,9 +46,9 @@
     </style>
     <defs>
         <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="35%">
-            <stop offset="10%" style="stop-color:#FFC944;stop-opacity:1" />
-            <stop offset="55%" style="stop-color:#FFAF44;stop-opacity:1" />
-            <stop offset="100%" style="stop-color:#FF9632;stop-opacity:1" />
+            <stop offset="10%" style="stop-color:#8CC584;stop-opacity:1" />
+            <stop offset="55%" style="stop-color:#45B2D3;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#51A795;stop-opacity:1" />
         </linearGradient>
         <clipPath id="round-corner">
             <rect x="0" y="0" width="110" height="20" rx="3" ry="3"/>
@@ -57,7 +57,7 @@
     <rect width="40" height="20" x="70" y="0" rx="3" ry="3" class="background"/>
     <rect width="75" height="20" clip-path="url(#round-corner)" class="gray-area"/>
     <text text-anchor="middle" alignment-baseline="middle" transform="translate(37.5, 11)">solved.ac</text>
-    <text class="tier" text-anchor="middle" alignment-baseline="middle" transform="translate(92, 11)">G1</text>
+    <text class="tier" text-anchor="middle" alignment-baseline="middle" transform="translate(92, 11)">P5</text>
 
     
 </svg>

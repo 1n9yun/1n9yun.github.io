@@ -38,7 +38,7 @@ tagline:               "
 		![Docker](https://img.shields.io/badge/-Docker-0db7ed)
     
 		<br>		
-		![algorithm tier](/assets/algorithm_tier.svg)
+		[![algorithm_tier](http://mazassumnida.wtf/api/mini/generate_badge?boj=jig7357 'Platinum 5'){:onerror='this.src=`/assets/algorithm_tier.svg`'}](https://solved.ac/jig7357){:target='_blank'}
 		"
 
 # A list of keywords for your blog
