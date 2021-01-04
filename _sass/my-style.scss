@@ -127,7 +127,7 @@ a::after{
 
 // for top-menu
 .top-menu-wrapper{
-  display: inline;
+  display: inline-block;
 
   input[type=checkbox]{
     display: none;
@@ -143,6 +143,11 @@ a::after{
 
 .nav-btn, .nav-btn-bar{
   height: 3rem;
+}
+.top-menu{
+  overflow-x: scroll;
+  // overflow-y: hidden;
+  white-space: nowrap;
 }
 .top-menu.nav-btn{
   background: none;
