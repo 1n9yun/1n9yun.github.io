@@ -5,9 +5,9 @@
       {% assign url = node.url | default: node.href %}
       {% assign count = count | plus: 1 %}
       <li>
-        <div class="menu-wrapper">
+        <div class="menu-wrapper" onmouseover="javascript:spread({{count}})" onmouseout="javascript:spread({{count}})">
           {% if node.submenu %}
-          <button class="spread-btn" onclick="javascript:spread({{count}})">
+          <button class="spread-btn">
               <span id="spread-icon-{{count}}" class="material-icons">arrow_right</span>
           </button>
           {% endif %}
@@ -19,24 +19,24 @@
             >
             {{ node.name | default:node.title }}
           </a>
-        </div>
-        {% if node.submenu %}
-        <div class="menu-wrapper">
-          <input type="checkbox" id="folder-checkbox-{{count}}">
-          <ul>
-          {% for subnode in node.submenu %}
-            <li>
-              <a
-                class="sidebar-nav-item {% if node.external  %}external{% endif %}"
-                href="{% include_cached smart-url url=subnode.url %}"
-                >
-                {{ subnode.title }}
-              </a>
-            </li>
-          {% endfor %}
-          </ul>
-        </div>
-        {% endif %}
+        
+          {% if node.submenu %}
+          <div id="submenu-{{count}}" class="menu-wrapper submenu hide">
+            <ul style="list-style: none;">
+            {% for subnode in node.submenu %}
+              <li>
+                <a
+                  class="sidebar-nav-item {% if node.external  %}external{% endif %}"
+                  href="{% include_cached smart-url url=subnode.url %}"
+                  >
+                  {{ subnode.title }}
+                </a>
+              </li>
+            {% endfor %}
+            </ul>
+          </div>
+          {% endif %}
+       </div>
       </li>
     {% endfor %}
   {% else %}
