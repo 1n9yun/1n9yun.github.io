@@ -1,2 +1,5 @@
 ps:
   imgpath:              /assets/img/problem-solving
+
+os:
+  imgpath:              /assets/img/docs/computer-science/operating-system
