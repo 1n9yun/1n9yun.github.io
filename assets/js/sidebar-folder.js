@@ -1,8 +1,13 @@
 function spread(count){
     let submenu = document.getElementById('submenu-' + count);
-    if(submenu?.classList.contains('hide')) submenu?.classList.remove('hide');
-    else submenu?.classList.add('hide');
+    if(submenu){
+        if(submenu.classList.contains('hide')) submenu.classList.remove('hide');
+        else submenu.classList.add('hide');
+    }
 
     let spreadIcon = document.getElementById('spread-icon-' + count);
-    spreadIcon?.innerHTML = spreadIcon?.innerHTML == 'arrow_right' ? 'arrow_drop_down' : 'arrow_right';
+    if(spreadIcon){
+        if(spreadIcon.innerHTML == 'arrow_right') spreadIcon.innerHTML = 'arrow_drop_down';
+        else spreadIcon.innerHTML = 'arrow_right';
+    }
 }
