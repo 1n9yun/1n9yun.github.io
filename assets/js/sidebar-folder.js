@@ -4,5 +4,5 @@ function spread(count){
     else submenu?.classList.add('hide');
 
     let spreadIcon = document.getElementById('spread-icon-' + count);
-    spreadIcon.innerHTML = spreadIcon.innerHTML == 'arrow_right' ? 'arrow_drop_down' : 'arrow_right';
+    spreadIcon?.innerHTML = spreadIcon?.innerHTML == 'arrow_right' ? 'arrow_drop_down' : 'arrow_right';
 }
