@@ -93,6 +93,10 @@ comments: true
 from IBM knowledgecenter
 {:.figcaption}
 
+## Scheduling
+일반적으로 `CPU 스케줄링`, `프로세스 스케줄링`, `커널 스레드 스케줄링`을 모두 같은 개념으로 사용한다.
+
+
 ### Thread pool
 * 특정 스레드 개수 + 작업 큐를 만들어 놓고 **작업들을 큐에 넣어 둔다.**  
 * **작업이 끝난 스레드가 큐에서 작업을 꺼내** 기능을 수행하도록 한다.  
