@@ -73,7 +73,12 @@ code{
   background-color: rgb(34,31,32);
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-  width: 15rem;
+  // width: 15rem;
+
+  ul{
+    margin: 0;
+    padding: 0 1.25rem;
+  }
 }
 .submenu.menu-wrapper.hide{
   display: none;
@@ -123,17 +128,6 @@ a::after{
 // for top-menu
 .top-menu-wrapper{
   display: inline-block;
-
-  input[type=checkbox]{
-    display: none;
-  }
-  input[type=checkbox] ~ ul{
-    display: none;
-    list-style: none;
-  }
-  input[type=checkbox]:checked ~ ul{
-    display: inline;
-  }
 }
 
 .nav-btn, .nav-btn-bar{
@@ -145,15 +139,9 @@ a::after{
   white-space: nowrap;
 }
 .top-menu.nav-btn{
-  background: none;
   border: none;
-  text-decoration: none;
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
   width: 6rem;
-  // height: 5rem;
-  color: var(--menu-text);
   margin-left: -1px;
 }
 .nav-btn:hover,.nav-btn:focus{
@@ -163,8 +151,4 @@ a::after{
 
 .nav-span{
   flex: none;
-}
-
-.top-nav-item{
-  display: inline;
 }

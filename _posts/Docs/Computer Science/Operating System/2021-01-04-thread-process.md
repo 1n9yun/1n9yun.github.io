@@ -70,6 +70,14 @@ comments: true
 여러 개의 스레드가 번갈아가면서 실행되는 성질이다.  
 스레드들이 병렬적으로 실행되는 것 처럼 보이지만 사실은 번갈아가면서 조금씩 실행되고 있는 것.  
 
+##### 동시성 제어
+
+
+
+
+
+
+
 #### 병렬성 (Parallelism)
 **멀티코어에서 멀티 스레드를 동작**시키는 방식.  
 한 개 이상의 스레드를 포함하는 각 코어들이 동시에 실행되는 성질.  
@@ -83,8 +91,20 @@ comments: true
 ##### 작업 병렬성(Task parallelism)
 **서로 다른 작업을 병렬 처리**하는 것.  
 
-대표적으로 **웹 서버**가 있다.  
+대표적으로 **웹 서버 어플리케이션**이 있다.  
 각각의 브라우저에서 **요청한 내용을 개별 스레드에서 병렬로 처리**한다.
+
+[~~Blocking I/O & non-Blocking I/O~~](javascript:console.log('아직'))
+{:.note title="참고"}
+
+### Thread Pool
+* 특정 스레드 개수 + 작업 큐를 만들어 놓고 **작업들을 큐에 넣어 둔다.**  
+* **작업이 끝난 스레드가 큐에서 작업을 꺼내** 기능을 수행하도록 한다.  
+
+아무리 요청이 폭주해도 스레드의 전체 개수가 늘어나지 않기 때문에 **어플리케이션의 성능이 급격히 저하되지 않는다.**  
+
+<!-- 스레드 풀 정리하기 https://honbabzone.com/java/java-thread/ -->
+[~~자세한 내용~~](javascript:console.log("아직"))
 
 ## Thread & Process
 {% assign post_vars = site.data['post_vars'] %}
@@ -96,15 +116,5 @@ from IBM knowledgecenter
 ## Scheduling
 일반적으로 `CPU 스케줄링`, `프로세스 스케줄링`, `커널 스레드 스케줄링`을 모두 같은 개념으로 사용한다.
 
-
-### Thread pool
-* 특정 스레드 개수 + 작업 큐를 만들어 놓고 **작업들을 큐에 넣어 둔다.**  
-* **작업이 끝난 스레드가 큐에서 작업을 꺼내** 기능을 수행하도록 한다.  
-
-아무리 요청이 폭주해도 스레드의 전체 개수가 늘어나지 않기 때문에 **어플리케이션의 성능이 급격히 저하되지 않는다.**  
-
-<!-- 스레드 풀 정리하기 https://honbabzone.com/java/java-thread/ -->
-[~~자세한 내용~~](javascript:console.log("아직"))
-
 ## Reference
-<https://honbabzone.com/java/java-thread/>{:target="_blank"}
+<https://honbabzone.com/java/java-thread/>

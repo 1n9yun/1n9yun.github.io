@@ -6,7 +6,7 @@ category:
 tags: 
   - jekyll
   - hydejack
-title: How I customized Hydejack(2) - Sub Menu
+title: How I customized Hydejack(2) - Sub Menu 펼치기
 description: >
   사이드바의 각 메뉴 아래에 서브 메뉴를 생성하는 방법
 related_posts:
@@ -15,7 +15,8 @@ related_posts:
 comments: true
 ---
 <!-- blank -->
-![hydejack-sub-menu](/assets/img/log/guitar/hydejack-1.png)
+{% assign post_vars = site.data["post_vars"] %}
+![hydejack-sub-menu-spread]({{ post_vars.guitar.imgpath}}/hydejack/submenu/hydejack-submenu-1.png)
 
 * toc
 {:toc}
