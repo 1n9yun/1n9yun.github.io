@@ -57,9 +57,9 @@ document.querySelector('hy-push-state').addEventListener('load', () => {
 스크롤에서 벗어나게 되면 `toc element`에 `affix` 클래스를 추가합니다.  
 그 반대 경우엔 `affix` 클래스를 제거하여 고정을 풀어줍니다.
 
-관련 자바스크립트는 제외했는데 왜 `affix`클래스는 있을까?
-{:.note}
+~~관련 자바스크립트는 제외했는데 왜 `affix`클래스는 있을까?~~  
 
+같은 방법으로 **헤더 태그들의 위치를 추적**하며 현재 읽는 위치에 `bold` 스타일 추가 삭제해서 구현했습니다.
 
 #### Source
 ```html
