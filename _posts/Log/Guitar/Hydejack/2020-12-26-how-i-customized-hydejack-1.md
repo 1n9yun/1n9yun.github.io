@@ -39,7 +39,7 @@ comments: true
 * `Gemfile.lock`에 `platform` 옵션 추가
   * `bundle lock --add-platform ruby`
   * `bundle lock --add-platform x64-mingw32`  
-    * 이 명령은 시도해보지 않았지만 작성 중 생각해보니 이게 제대로 된 해결 방법일 것 같다는 느낌이 듭니다. 추후에 시도 해보고 수정하겠습니다.
+    * ~~이 명령은 시도해보지 않았지만 작성 중 생각해보니 이게 제대로 된 해결 방법일 것 같다는 느낌이 듭니다. 추후에 시도 해보고 수정하겠습니다.~~ 안됨!
 
 ## 해결 방법
 * `gem install eventmachine --platform=ruby`

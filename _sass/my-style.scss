@@ -23,7 +23,6 @@ code{
 .swiper-container {
   width: 100%;
   height: 100%;
-
 }
 
 .swiper-slide {
@@ -156,5 +155,12 @@ a::after{
 // for underline u tag
 u{
   text-decoration: none;
+  font-weight: bold;
   background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #fbe8c9 50%);
+}
+
+// for katex maths
+.katex-display{
+  // 투명
+  background-color: transparent !important;
 }
