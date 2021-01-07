@@ -7,7 +7,7 @@ tags:
     - operating-system
 title: 프로세스의 주소 공간
 description: >
-    프로그램이 OS로부터 할당받는 메모리 주소 공간에 대해 정리합니다.
+    프로그램이 OS로부터 할당받는 메모리 주소 공간
 
 related_posts:
     - 

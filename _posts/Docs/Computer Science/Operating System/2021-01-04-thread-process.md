@@ -7,8 +7,6 @@ tags: operating-system
 title: Process, Thread
 description: >
   프로세스와 스레드에 대한 내용 정리
-related_posts:
-    - /docs/computer-science/2021-01-06-multi-thread/
 ---
 <!-- blank -->
 {% assign post_vars = site.data['post_vars'] %}
@@ -68,7 +66,7 @@ from IBM knowledgecenter
 
 N개의 스레드가 공유 자원에 접근할 때 문제가 생길 수 있다. (입출금 문제 등..)  
 
-Multi Thread에 대한 더 **자세한 내용**은 [~~여기~~](javascript:console.log('아직'))에 정리하겠음.
+추가로, [Concurrent Programming](/docs/java/2021-01-06-concurrent-programming/)
 {:.note}
 
 #### 동시성 (Concurrency)
