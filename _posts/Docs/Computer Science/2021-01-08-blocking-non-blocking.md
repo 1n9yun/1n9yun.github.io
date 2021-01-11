@@ -26,3 +26,9 @@ blocking과 sync, non-blocking과 async가 각각 비슷하지만 위 그림에�
 
 ## 2:2 Matrix
 ![2:2 Matrix]({{ cs_imgpath }}/blocking_non-blocking-1.png)
+
+`Blocking-Aync`의 경우 별로 이점이 없어보이며 사용할 일이 없을 것 같은데 의도치 않게 이처럼 동작하는 경우가 있다.  
+대표적으로 `Node.js`와 `MySQL`의 조합이 있다.  
+`Nonblocking-Async`를 추구하다가 의도와 다르게 `Blocking-Async`가 되는 경우인데, `Node.js`에서 Async로 구성을 했다고 하더라도 결국 DB작업 시에 사용하는 `MySQL`의 드라이버가 `Blocking` 방식이기 때문에 이처럼 동작하는 것이다.  
+또한 `Java`의 `JDBC`도 마찬가지이다.
+{:.note}
