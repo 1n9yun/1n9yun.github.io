@@ -4,18 +4,23 @@ title: SpringSecurity와 JWT를 이용한 사용자 인증과 인가
 category:
     - log
     - develop
+description: >
+  [STEW 프로젝트](/project/2020-07-13-stew/)를 진행하면서 SpringSecurity에 JWT를 사용한 이유와 방법에 대해 정리합니다.
 sitemap: false
 ---
-#### SpringSecurity와 JWT를 이용한 사용자 인증과 인가
+# SpringSecurity와 JWT를 이용한 사용자 인증과 인가
+
+* toc
+{:toc}
 
 다른 인증 방식과의 비교는 [~~여기~~](javascript:console.log('아직'))에 정리합니다.  
 <!-- HTTP는 연결 지향 프로토콜인 TCP 기반임에도 불구, 대표적인 비 연결 지향 프로토콜입니다. 한 번의 요청 - 응답 사이클이 완료되면 연결을 종료하기 대문에 각각의 요청은 모두 독립적인 요청으로 인지합니다. 따라서 클라이언트는 매 요청에 인증 정보를 포함시켜야 하며 서버 또한 이를 기반으로 인증 과정을 거쳐야 합니다.  
 ex) 사용자 A가 작성한 게시글을 다른 사용자가 마음대로 수정/삭제할 수 없음 ([여기] 문서에 추가하자) -->
 {:.note}
-##### JWT 도입 이유
+## JWT 도입 이유
   다른 인증 방식과 비교 하여 서버 사이드의 별다른 저장소가 필요 없다는 점, 클라이언트와 서버의 연결고리가 없으므로 서버 확장성과 유지 보수측면에서 장점이 있어 Stateless Server에 보다 적절한 방식이라고 생각됩니다.
   또한 스마트폰, 태블릿과 같은 모바일 환경에서의 서비스도 고려했기 때문에 토큰 기반 인증이 적절하다고 생각했습니다.(쿠키 기반 인증의 경우 쿠키 컨테이너를 사용해야 함?)
-###### 인증 정보의 위치 결정
+### 인증 정보의 위치 결정
 우선 아래와 같은 조건을 생각합니다.  
 * **모든 형태의 HTTP 요청에 사용** 가능해야 한다. (`GET`, `POST`, `PUT`, `DELETE` ...)
 * 클라이언트 사이드에서 **쉽게 저장**하고 HTTP 요청 시 **쉽게 데이터를 실어줄** 수 있어야 한다.  
@@ -26,7 +31,7 @@ ex) 사용자 A가 작성한 게시글을 다른 사용자가 마음대로 수�
 * 표준화 되어있는 Authorization Header 대신 **query string을 써서 얻을 메리트가 없다.**
 * cookie header와 authorization header의 경우는 query string을 걸렀던 이유와 비슷하게 **인증이라는 맥락에서 authorization header가 어울린다.**
 
-###### 인증 스키마
+### 인증 스키마
 [MDN docs - Authorization header](https://developer.mozilla.org/ko/docs/Web/HTTP/Headers/Authorization){: target="_blank"}  
 [Bearer Spec - RFC6750](https://tools.ietf.org/html/rfc6750){: target="_blank"}
 {:.note title="Prerequisite"}
@@ -51,13 +56,13 @@ authorization header의 값인 `<type> <credentials>`에서 인증 type에 따�
 * 하지만 **Bearer에 JWT, JWT라는 타입을 쓰는 것도 표준이 아니다.** 그러나 **OAuth 2.0을 보류**하게 되어 대신 쓸 토큰 기반 인증 시스템으로 **JWT가 적절**하다고 생각했다.
 * JWT는 자료(사례, 라이브러리, 예제 등)가 많다.
 
-###### Refresh Token
+### Refresh Token
 자세한 내용은 [~~여기~~](javascript:console.log('아직'))에 정리합니다.
 {:.note}
 토큰 탈취 위협에 대비하기 위한 방법으로 `Refresh Token`을 추가로 사용합니다.  
 [RFC-6749](https://tools.ietf.org/html/rfc6749){:target="_blank"}에서 소개되었습니다.
 
-###### 토큰 저장 위치
+### 토큰 저장 위치
 가장 고민이 많았던 부분입니다.  
 서버에서는 두 개의 토큰을 발급하고 `Refresh Token`을 `Redis`에 저장합니다.  
 클라이언트에서의 저장 위치는 다음의 선택지에서 선택합니다.
@@ -74,18 +79,18 @@ authorization header의 값인 `<type> <credentials>`에서 인증 type에 따�
 * 그러나 `Cookie`는 인증 정보 위치 결정 과정 결과와 모순된다.
 <!-- * `SPA + RESTful Server`의 조합으로 **Client Side에서 별도의 DB 사용**은 불가능하다. -->
 
-##### 구현
+## 구현
 
 SpringSecurity Architecture (제공되는 Interface, Implementations ...) 는 [~~여기~~](javascript:console.log('아직'))에 정리합니다.  
 [SpringSecurity docs - Authentication ...](https://docs.spring.io/spring-security/site/docs/current/reference/html5/#servlet-authentication){: target="_blank"}
 {:.note title="prerequisite"}
 
-###### 흐름 파악
+### 흐름 파악
 
 아래와 같은 구조로 Authentication을 구현합니다.
 ![SpringSecurity Architecture](https://chathurangat.files.wordpress.com/2017/08/blog-post-spring-security-basic-authentication-3.png)
 
-###### Authentication
+### Authentication
 제공되는 필터 중 `UsernamePasswordAuthenticationFilter`를 커스터마이징하여 사용합니다. 이 필터의 인증 결과가 `SecurityContextHolder`에 등록되고 이후에 권한에 따른 요청의 필터링이 가능해집니다.  
 
 `AuthenticationManager`에 나름의 인증 과정을 포함시키기 위해 `AuthenticationProvider` 인터페이스를 구현하고 주입했습니다.
@@ -96,7 +101,7 @@ SpringSecurity Architecture (제공되는 Interface, Implementations ...) 는 [~
 * `Refresh Token`을 `Redis`에 저장하여 만료시간을 설정
 * 응답으로 `Access Token`과 `Refresh Token`을 반환
 
-###### Authorization
+### Authorization
 `OncePerRequestFilter`를 상속하여 구현한 필터를 사용했습니다.
 해당 필터에서 토큰의 변조 여부, 만료 여부 등의 토큰 검증을 수행합니다.
 
