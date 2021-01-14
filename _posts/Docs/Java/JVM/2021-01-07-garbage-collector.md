@@ -4,7 +4,7 @@ category:
     - docs
     - java
 tags:
-    - jvm
+    - first-java
 title: Garbage Collector
 description: >
     GC에 대해.
