@@ -1,12 +1,13 @@
 ---
 layout: post
-title: InooDB Lock
+title: InnoDB Lock
 category:
     - docs
     - computer-science
 tags:
     - database
 description: >
+    InnoDB 엔진에서 사용하는 Lock의 종류에 대해
 ---
 <!-- blank -->
 * toc

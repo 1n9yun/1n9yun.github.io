@@ -5,13 +5,15 @@ category:
     - computer-science
 title: Blocking / Non-blocking, Sync / Async
 description: >
+    Block, Non-block, Sync, Async에 대한 개념 정리
 ---
 <!-- blank -->
 {% assign cs_imgpath = site.data['post_vars'].cs.imgpath %}
-![2:2 Matrix]({{ cs_imgpath }}/blocking_non-blocking-2.png)
 
 * toc
 {:toc}
+
+![2:2 Matrix]({{ cs_imgpath }}/blocking_non-blocking-2.png)
 
 blocking과 sync, non-blocking과 async가 각각 비슷하지만 위 그림에서 다른 축으로 자리잡고 있는 이유가 있다.  
 각각의 관심사가 다르기 때문인데 그것을 아래에 간단히 정리.

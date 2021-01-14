@@ -6,7 +6,7 @@ category:
 tags: operating-system
 title: Process, Thread
 description: >
-  프로세스와 스레드에 대한 내용 정리
+  프로세스와 스레드, 멀티 프로세스와 멀티 스레드, 스케줄링에 대해
 ---
 <!-- blank -->
 {% assign post_vars = site.data['post_vars'] %}

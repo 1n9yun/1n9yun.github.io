@@ -7,7 +7,7 @@ tags:
     - first-java
 title: Garbage Collector
 description: >
-    GC에 대해.
+    garbage collection과 그 과정에 대해
 
 ---
 <!-- blank -->

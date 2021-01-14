@@ -7,7 +7,7 @@ category:
 tags:
     - database
 description: >
-
+    데이터베이스에서 ACID와 Transaction Isolation Level에 대해
 ---
 <!-- blank -->
 * toc

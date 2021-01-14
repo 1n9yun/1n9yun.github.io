@@ -7,7 +7,7 @@ category:
 tags:
     - operating-system
 description: >
-
+    가상 메모리의 요구 페이징, 페이지 폴트, 페이지 교체 알고리즘에 대해
 ---
 <!-- blank -->
 * toc

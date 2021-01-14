@@ -6,7 +6,8 @@ category:
     - computer-science
 tags:
     - operating-system
-
+description: >
+    디스크 스케줄링 알고리즘에 대해
 ---
 # 디스크 스케줄링
 
