@@ -37,6 +37,30 @@ public class Main{
 
 이처럼 `compile`을 해야 실행 가능한 파일이 되지만 `.class`파일은 아직 컴퓨터가 읽을 수 없는 `byte code`이다. 그 후에 이를 `JVM`이 기계어로 변환하며 실행되는 것이다.
 
+### 동기화가 필요한 이유
+```java
+public class IncreaseTest{
+    public static void main(String[] args){
+        int number = 20;
+        int test = number + 2;
+    }
+}
+```
+`test`변수에 `number + 2`만큼을 저장하는 코드이다.
+{:.figcaption}
+`number`, `test`변수를 할당하는 소스코드는 각각 한줄로 표현이 되는 것을 기억하자.
+
+![byte code]({{java_imgpath}}/run-java-2.png)
+`javap -c {className}`명령을 사용하면 `byte code`를 볼 수 있다.
+{:.figcaption}
+`byte code`에서는 <u>소스코드에서 한 줄로 표현된 명령이 아래와 같은 여러 명령으로 세분화되어 있는 것을 볼 수 있다.</u>  
+
+* 변수를 불러온다.
+* 더한다.
+* 변수를 저장한다.
+
+따라서 <u>동기화가 되어있지 않다면 변수를 새로운 값으로 저장하기 전에 읽어들일 경우 일관성이 깨질 수 있다.</u>
+
 ## JIT Compiler
 실행 시간에 `byte code`를 인터프리터 방식으로 기계어로 번역하여 실행하는 기법이다.  
 
