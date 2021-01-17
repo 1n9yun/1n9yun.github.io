@@ -9,7 +9,7 @@ tags:
     # - operating-system
 
 description: >
-    [Thread, Process](/docs/computer-science/2021-01-04-thread-process) 글에 다 적지 못했던 Multi-Thread에 대한 이야기.
+    Java Concurrent Programming에 대해...
 
 related_posts:
     - /docs/computer-science/2021-01-04-thread-process/
