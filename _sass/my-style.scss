@@ -218,6 +218,7 @@ u{
   top: 1.35rem;
   left: 60px;
   box-shadow: 0 0 5px 0 grey;
+  background-color: white;
   z-index: 1;
 
   transition: all 0.5s;
@@ -228,16 +229,16 @@ u{
   box-shadow: 0 0 2px 0 grey;
 }
 .list-post > ul > li:first-child::before{
-  height: 2.8rem;
-  top: -1.4rem;
+  height: 3.0rem;
+  top: -1.5rem;
 }
 .list-post > ul > li:not(:last-child)::after{
-  height: 3.1rem;
-  top: -1.2rem;
+  height: 3.3rem;
+  top: -1.3rem;
 }
 .list-post ul:not(:last-child)>li:last-child::after{
-  height: 5.0rem;
-  top: -1.2rem;
+  height: 5.2rem;
+  top: -1.3rem;
 }
 
 .list-post .related-posts>li+li{
