@@ -13,19 +13,19 @@ author1:
     Please check my [Resume](/resume) to find out for more about me !
 
   # This photo will be used in the about section
-  # picture:
-  #   path:            https://placehold.it/128x128
-  #   # srcset is optional, but can be used to provide higher res versions for retina displays
-  #   srcset:
-  #     1x:            https://placehold.it/128x128
-  #     2x:            https://placehold.it/256x256
-
   picture:
-    path:            /assets/img/128x128.jpg
+    path:            https://placehold.it/128x128
     # srcset is optional, but can be used to provide higher res versions for retina displays
     srcset:
-      1x:            /assets/img/128x128.jpg
-      2x:            /assets/img/256x256.jpg
+      1x:            https://placehold.it/128x128
+      2x:            https://placehold.it/256x256
+
+  # picture:
+  #   path:            /assets/img/128x128.jpg
+  #   # srcset is optional, but can be used to provide higher res versions for retina displays
+  #   srcset:
+  #     1x:            /assets/img/128x128.jpg
+  #     2x:            /assets/img/256x256.jpg
 
   # Social media icons in sidebar
   # Comment/uncommet to show/hide
