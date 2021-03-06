@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: post
 title: Serializable
 category:
@@ -6,7 +6,7 @@ category:
     - java
 description: >
     Java Serializable의 종류와 사용 이유에 대해
----
+--- -->
 <!-- blank -->
 * toc
 {:toc}
