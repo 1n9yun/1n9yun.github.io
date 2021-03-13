@@ -17,17 +17,10 @@ description: >
 {:.note title="Transaction ?"}
 
 ## ACID
-### Atomicity
-작업이 부분적으로 성공하는 일이 없도록 보장하는 성질
-
-### Consistency
-`transaction`이 끝날 때 DB의 여러 제약 조건에 맞는 상태를 보장하는 성질
-
-### Isolation
-`transaction`이 진행되는 중간 상태의 데이터를 다른 `transaction`이 볼 수 없도록 보장하는 성질
-
-### Durability
-`transaction`이 성공했을 경우 해당 결과가 영구적으로 적용됨을 보장하는 성질
+* Atomicity --- 작업이 부분적으로 성공하는 일이 없도록 보장하는 성질
+* Consistency --- `transaction`이 끝날 때 DB의 여러 제약 조건에 맞는 상태를 보장하는 성질
+* Isolation --- `transaction`이 진행되는 중간 상태의 데이터를 다른 `transaction`이 볼 수 없도록 보장하는 성질
+* Durability --- `transaction`이 성공했을 경우 해당 결과가 영구적으로 적용됨을 보장하는 성질
 
 ### ACID 원칙은 종종 지켜지지 않는다.
 strict하게 지키려면 동시성이 매우 떨어지기 때문이다.
@@ -56,31 +49,6 @@ non-locking read operation(기본 select)을 수행할 때 동시에 실행중�
 **Unrepeatable Read**  
 트랜잭션 내에서 한 번 읽은 데이터가 트랜잭션이 끝나기 전에 변경되었다면, 다시 읽었을 때 새로운 값이 읽히는 것을 의미한다.  
 {:.note title="Prerequisites"}
-
-### READ UNCOMMITTED
-READ UNCOMMITTED 레벨의 경우 lock을 사용하지 않는다.  
-따라서 `dirty read`가 발생할 수 있는데 이는 InnoDB 엔진이 `transaction`을 `commit`하는 방법 때문이다.
-
-InnoDB엔진은 일단 실행된 모든 쿼리를 `commit`이 되지 않았어도 DB에 적용한다. 따라서 `consistent read`를 하지 않고 해당 시점의 DB를 읽으면 `dirty read`가 발생하는 것이다.
-
-> InnoDB uses an optimistic mechanism for commits, so that changes can be written to the data files before the commit actually occurs. This technique makes the commit itself faster, with the tradeoff that more work is required in case of a rollback. --- *from MySQL Reference*
-
-
-### READ COMMITTED
-commit된 데이터만 보이는 수준의 isolation을 보장하는 level이다.
-`REPEATABLE READ`와는 다르게 **매 read operation마다 DB snapshot을 생성한다.** 그러므로 다른 `transaction`이 commit한 후 다시 read operation이 수행되면 해당 변화를 볼 수 있다. 또한 `phantom read`가 발생할 수 있다.
-
-`REPEATABLE READ`와 같이 locking read를 할 수 있도록 동일하게 `select ... for share`, `select ... for update`구문이 제공되지만 **적용되는 lock의 범위가 달라지는 것에 주의해야 한다.**
-
-<!-- index 공부하고 ~~
-READ COMMITTED 레벨에서 locking이 어떻게 사용되는지 케이스별 분석
-READ COMMITTED 레벨로 설정된 경우 동일하게 locking read 구문 및, UPDATE, DELETE이 수행되더라도 REPEATABLE READ일 때보다 더 적은 범위에 대해서 lock이 적용된다.
-
-locking read, UPDATE, DELETE 구문이 실행될때 “찾아진 레코드”에만 락을 건다.
-레코드를 찾기위해 스캔했던 인덱스 레코드에 대해서는 gap lock을 적용하지 않기 때문에 해당 gap에 대해 다른 트랜잭션에서 자유롭게 INSERT가 가능하다. (Phantom read 발생)
-foreign-key 제약과 duplicate-key 확인을 위해서만 gap lock이 사용된다.
-lock이 적어지는 만큼 동시성이 좋아진다.
-deadlock이 발생할 확률이 REPEATABLE READ보다는 줄어들지만, 여전히 발생 가능성은 존재한다. -->
 
 ### REPEATABLE READ
 InnoDB 엔진에서 사용하는 기본 레벨이며 간단히 말해서 <u>transaction이 시작되기 전에 commit된 내용에 대해서만 조회할 수 있는 isolation level이다.</u>  
@@ -114,6 +82,31 @@ gap lock 또는 next-key lock을 이용해서 스캔한 인덱스 범위에 lock
 <!-- REPEATABLE READ vs READ COMMITTED 
 https://suhwan.dev/2019/06/09/transaction-isolation-level-and-lock/
 -->
+
+### READ UNCOMMITTED
+READ UNCOMMITTED 레벨의 경우 lock을 사용하지 않는다.  
+따라서 `dirty read`가 발생할 수 있는데 이는 InnoDB 엔진이 `transaction`을 `commit`하는 방법 때문이다.
+
+InnoDB엔진은 일단 실행된 모든 쿼리를 `commit`이 되지 않았어도 DB에 적용한다. 따라서 `consistent read`를 하지 않고 해당 시점의 DB를 읽으면 `dirty read`가 발생하는 것이다.
+
+> InnoDB uses an optimistic mechanism for commits, so that changes can be written to the data files before the commit actually occurs. This technique makes the commit itself faster, with the tradeoff that more work is required in case of a rollback. --- *from MySQL Reference*
+
+
+### READ COMMITTED
+commit된 데이터만 보이는 수준의 isolation을 보장하는 level이다.
+`REPEATABLE READ`와는 다르게 **매 read operation마다 DB snapshot을 생성한다.** 그러므로 다른 `transaction`이 commit한 후 다시 read operation이 수행되면 해당 변화를 볼 수 있다. 또한 `phantom read`가 발생할 수 있다.
+
+`REPEATABLE READ`와 같이 locking read를 할 수 있도록 동일하게 `select ... for share`, `select ... for update`구문이 제공되지만 **적용되는 lock의 범위가 달라지는 것에 주의해야 한다.**
+
+<!-- index 공부하고 ~~
+READ COMMITTED 레벨에서 locking이 어떻게 사용되는지 케이스별 분석
+READ COMMITTED 레벨로 설정된 경우 동일하게 locking read 구문 및, UPDATE, DELETE이 수행되더라도 REPEATABLE READ일 때보다 더 적은 범위에 대해서 lock이 적용된다.
+
+locking read, UPDATE, DELETE 구문이 실행될때 “찾아진 레코드”에만 락을 건다.
+레코드를 찾기위해 스캔했던 인덱스 레코드에 대해서는 gap lock을 적용하지 않기 때문에 해당 gap에 대해 다른 트랜잭션에서 자유롭게 INSERT가 가능하다. (Phantom read 발생)
+foreign-key 제약과 duplicate-key 확인을 위해서만 gap lock이 사용된다.
+lock이 적어지는 만큼 동시성이 좋아진다.
+deadlock이 발생할 확률이 REPEATABLE READ보다는 줄어들지만, 여전히 발생 가능성은 존재한다. -->
 
 ### SERIALIZABLE
 `Transaction Isolation Level`이 `SERIALIZABLE`로 설정되면 InnoDB는 자동으로 일반적인 `select`구문을 `select ... for share`로 변경하여 실행한다. 그 외에는 `REPEATABLE READ`레벨과 동일하다.
