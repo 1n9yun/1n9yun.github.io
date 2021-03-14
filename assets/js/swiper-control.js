@@ -1,4 +1,4 @@
-let swiper;
+let swiper = [];
 let imgList;
 function getSlideElementList(path, imgList, dotted, size){
     var innerHTML = `<div class="swiper-wrapper">`;
@@ -19,7 +19,8 @@ function getSlideElementList(path, imgList, dotted, size){
 
 function swiperInitialize(container_id, props){
     document.getElementById(container_id).innerHTML = getSlideElementList(props.path, props.imgList, props.dotted, props.size);
-    swiper.append(new Swiper(container_id, {
+
+    swiper.push(new Swiper("#" + container_id, {
         spaceBetween: 30,
         centeredSlides: true,
         autoplay: {

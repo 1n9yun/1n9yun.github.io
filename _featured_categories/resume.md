@@ -18,12 +18,10 @@ description: >
 # DON'T USE THIS SETTING IN YOUR CATEGORIES!
 --- 
 # 정인균 --- Backend Developer
-
 v210314
 <br><br>
-![email icon](https://www.flaticon.com/svg/vstatic/svg/95/95627.svg?token=exp=1615709835~hmac=616a1ab665bdb48e953f3971a4942a6a){: width="24px"} jig7357@gmail.com  
-![github icon](https://www.flaticon.com/svg/vstatic/svg/25/25231.svg?token=exp=1615709806~hmac=6282a6ee33e5384fa6f2a112fe3db0b5){: width="24px"} <https://github.com/1n9yun>
-{:.note title="Summary"}
+<span class="icon-mail"></span> jig7357@gmail.com  
+<span class="icon-github"></span> <https://github.com/1n9yun>
 
 ## Education
 **충북대학교** --- 컴퓨터 공학과 졸업 (2014. 03. ~ 2020. 02)  
