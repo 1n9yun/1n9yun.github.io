@@ -19,7 +19,7 @@ function getSlideElementList(path, imgList, dotted, size){
 
 function swiperInitialize(container_id, props){
     document.getElementById(container_id).innerHTML = getSlideElementList(props.path, props.imgList, props.dotted, props.size);
-    swiper = new Swiper('.swiper-container', {
+    swiper.append(new Swiper(container_id, {
         spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
@@ -37,7 +37,7 @@ function swiperInitialize(container_id, props){
         lazy: {
           loadPrevNext: true
         }
-      });
+      }));
 }
 
 function slideTo(n, speed = 300){

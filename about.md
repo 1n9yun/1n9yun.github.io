@@ -9,5 +9,3 @@ redirect_from:
 # About
 
 <!--author-->
-
-## Not Yet...
