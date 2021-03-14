@@ -123,7 +123,7 @@ v210314
 <script>
   imgList = [];
   for(let i=1;i<=7;i++){
-    imgList.push(i + ".jpg");
+    imgList.push(i + ".JPG");
   }
   swiperInitialize("popo-carousel", {
     path: "/img/project/popo",
