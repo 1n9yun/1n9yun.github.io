@@ -20,8 +20,8 @@ description: >
 # 정인균 --- Backend Developer
 v210314
 <br><br>
-<span class="icon-mail"></span> jig7357@gmail.com  
-<span class="icon-github"></span> <https://github.com/1n9yun>
+<span class="icon-mail"></span> **jig7357@gmail.com**  
+<span class="icon-github"></span> **<https://github.com/1n9yun>**
 
 ## Education
 **충북대학교** --- 컴퓨터 공학과 졸업 (2014. 03. ~ 2020. 02)  
