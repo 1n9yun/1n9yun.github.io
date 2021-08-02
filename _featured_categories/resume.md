@@ -17,27 +17,48 @@ description: >
 # Exclude this example category from the sitemap.
 # DON'T USE THIS SETTING IN YOUR CATEGORIES!
 --- 
-# 정인균 --- Backend Developer
-v210314
+# 정인균 --- On the road to be Backend Engineer
+v210802
 <br><br>
 <span class="icon-mail"></span> **jig7357@gmail.com**  
 <span class="icon-github"></span> **<https://github.com/1n9yun>**
 
-## Education
-**충북대학교** --- 컴퓨터 공학과 졸업 (2014. 03. ~ 2020. 02)  
-**세광고등학교** --- 졸업 (2011. 03. ~ 2014. 02)  
+---
 
-## Experience
+## Words in my heart
 
-### 삼성 청년 소프트웨어 아카데미 ([SSAFY](https://www.ssafy.com/ksp/jsp/swp/swpMain.jsp))
-(2020. 01 ~ 2020. 12)
+---
 
-알고리즘 기반 코딩 역량 강화, **Java, Spring framwork**를 이용한 실무 기반의 프로젝트 수행을 통해 실전형 SW 개발자 양성 프로그램
+## Educations
 
-## Project
+* ![수료](https://img.shields.io/badge/-수료-grey) **삼성 청년 소프트웨어 아카데미 [[SSAFY]](https://www.ssafy.com/ksp/jsp/swp/swpMain.jsp)** --- (2020. 01 ~ 2020. 12)
 
-### STEW --- 캠 스터디 플랫폼
-<!-- ![stew](/assets/img/resume/stew.png) -->
+    * 알고리즘 기반 코딩 역량 강화, **Java, Spring framwork**를 이용한 실무 기반의 프로젝트 수행을 통한 실전형 SW 개발자 양성 프로그램
+
+*  ![졸업](https://img.shields.io/badge/-졸업-grey) **충북대학교** --- 컴퓨터 공학과 (2014. 03. ~ 2020. 02)  
+*  ![졸업](https://img.shields.io/badge/-졸업-grey) **세광고등학교** --- (2011. 03. ~ 2014. 02)  
+
+---
+
+## Experiences
+
+* ![재직](https://img.shields.io/badge/-Current-green) **LG CNS** --- (2021. 05 ~ )
+* ![인턴](https://img.shields.io/badge/-Intern-grey) **N Tech Service** --- (2021. 03 ~ 2021. 05)
+
+---
+
+## Projects
+
+### Refactoring
+
+열정적이지만 부족했던 과거의 프로젝트를 리팩토링
+
+![inprogress](https://img.shields.io/badge/-in_progress-blue) **[STEW]()**
+
+---
+
+### In SSAFY
+#### STEW --- 캠 스터디 플랫폼
 
 <div id="stew-carousel" class="swiper-container"></div>
 <script>
@@ -68,7 +89,7 @@ v210314
   })
 </script>
 
-#### SUMMARY
+##### SUMMARY
 (2020. 07. 13 ~ 2020. 08. 21)  
 
 코로나19로 인한 언택트 시대를 맞아 변화하는 스터디 형태를 따라서, **서로 만나지 않고 감시하며 공부할 수 있는 환경을 제공**하자는 의미에서 제작하게 되었습니다.
@@ -77,7 +98,7 @@ v210314
 
 마이크, 카메라를 통해 화상 회의 형태의 **실시간 스트리밍 서비스를 제공**하여 서로가 공부를 잘 하고 있는지 감시할 수 있으며 채팅 기능도 제공함으로써 여러 가지 소통 환경을 제공하였습니다.
 
-#### 기여
+##### 기여
 
 * 회원 API 구성
   * Spring Security를 이용한 **회원의 인증/인가**
@@ -88,7 +109,7 @@ v210314
 
 ---
 
-### Michin AI --- 인공지능 영어 공부 챗봇
+#### Michin AI --- 인공지능 영어 공부 챗봇
 <div id="michinai-carousel" class="swiper-container"></div>
 <script>
   imgList = [];
@@ -104,21 +125,21 @@ v210314
   })
 </script>
 
-#### SUMMARY
+##### SUMMARY
 (2020. 08. 31 ~ 2020. 10. 08)
 
 카카오톡 챗봇과 연동하여 봇과 영어로 대화함으로써 **영어 문장력을 기를 수 있는 서비스**를 제공하고자 제작하게 되었습니다.
 
 챗봇과 영어로 대화한 기록들을 가지고 문장 교정을 하고, 모르는 단어를 등록하여 공부할 수 있는 단어장을 제공합니다.
 
-#### 기여
+##### 기여
 * 인공지능 모델 비동기화
-  * Backend 서버와 인공지능 모델을 **Websocket으로 연결, 메시지 큐를 이용하여 비동기 처리**
-  * 답변 생성 모델 Agent들을 생성하여 **메시지 큐에서 사용자가 보낸 문장을 꺼내 처리**
+  * Backend 서버와 인공지능 모델 **소켓 연결 후 요청 비동기 처리**
+  * 답변 생성 모델 Agent들이 **사용자 메시지를 이벤트 기반으로 병렬 처리**
 
 ---
 
-### POPO --- 개발자 포트폴리오 제작 사이트
+#### POPO --- 개발자 포트폴리오 제작 사이트
 <div id="popo-carousel" class="swiper-container"></div>
 <script>
   imgList = [];
@@ -134,7 +155,7 @@ v210314
   })
 </script>
 
-#### SUMMARY
+##### SUMMARY
 (2020. 10. 13 ~ 2020. 11. 20)  
 
 디자이너 포트폴리오 사이트에서 영감을 받아 **개발자 전용 포트폴리오 제작 사이트**를 만들자는 생각에서 제작하게 되었습니다.
@@ -145,7 +166,7 @@ v210314
 
 진행했던 프로젝트를 추가하고 각 프로젝트 별 세부사항 설명, 코드, 예시화면을 추가할 수 있습니다.
 
-#### 기여
+##### 기여
 
 * 프로젝트 세부사항 API
   * MongoDB에 Embedded Document 형식으로 프로젝트 세부사항들을 CRUD하는 API 작성
