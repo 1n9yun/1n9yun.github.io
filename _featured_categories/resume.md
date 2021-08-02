@@ -25,11 +25,28 @@ v210802
 
 ---
 
-## Words in my heart
+<div class="collapsible-title" markdown="1">
+
+## Words in my Heart
+
+</div>
+<div class="collapsible-body" markdown="1">
+- <span style="color: orangered">**자신감은 행동과 노력으로 증명되어야 한다**</span>
+- **행동하지 않는 당찬 포부는 시련을 만나지 못한 어설픈 자만일 뿐**
+- **나를 죽이지 못하는 고통은 나를 더 강하게 만들 뿐이다**
+- **멋있는 사람이 되자**
+- <span style="color: red">**제대로 하는 것은 끝이 없다. 그러나 제대로 해야 한다**</span>
+- <span style="color: dodgerblue">**흔들리는 벽엔 아무도 기댈 수 없다**</span>
+- **영향을 주는 사람이 되자**
+- **예리하게 벼려진 칼은 수 없이 내려쳐지고 담글질되어 만들어진다**
+</div>
+<script>
+    collapsibleInit();
+</script>
 
 ---
 
-## Educations
+## 📚 Educations
 
 * ![수료](https://img.shields.io/badge/-수료-grey) **삼성 청년 소프트웨어 아카데미 [[SSAFY]](https://www.ssafy.com/ksp/jsp/swp/swpMain.jsp)** --- (2020. 01 ~ 2020. 12)
 
@@ -40,18 +57,18 @@ v210802
 
 ---
 
-## Experiences
+## 🌎 Experiences
 
 * ![재직](https://img.shields.io/badge/-Current-green) **LG CNS** --- (2021. 05 ~ )
 * ![인턴](https://img.shields.io/badge/-Intern-grey) **N Tech Service** --- (2021. 03 ~ 2021. 05)
 
 ---
 
-## Projects
+## 🔥 Projects
 
 ### Refactoring
 
-열정적이지만 부족했던 과거의 프로젝트를 리팩토링
+열정적이지만 부족했던 과거의 프로젝트 다시보기
 
 ![inprogress](https://img.shields.io/badge/-in_progress-blue) **[STEW]()**
 
