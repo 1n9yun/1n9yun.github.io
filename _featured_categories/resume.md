@@ -70,7 +70,7 @@ v210802
 
 열정적이지만 부족했던 과거의 프로젝트 다시보기
 
-![inprogress](https://img.shields.io/badge/-in_progress-blue) **[STEW]()**
+![inprogress](https://img.shields.io/badge/-in_progress-blue) **[STEW](/stew/)**
 
 ---
 
