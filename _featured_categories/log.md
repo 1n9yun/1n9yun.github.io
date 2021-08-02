@@ -10,9 +10,7 @@ hide_description: false
 
 ## Category
 * [Develop]{:.heading.flip-title} --- 개발 일지  
-* [Book]{:.heading.flip-title} --- 독서 일지  
 * [Guitar]{:.heading.flip-title} --- 기타 잡다한 일지    
 
 [Develop]:  /develop/
-[Book]:     /book/
 [Guitar]:   /guitar/

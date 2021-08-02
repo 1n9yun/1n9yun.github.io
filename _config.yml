@@ -30,12 +30,8 @@ tagline:               "
 		![Java](https://img.shields.io/badge/-Java-orange)	
 		![SpringBoot](https://img.shields.io/badge/-SpringBoot-green)
 		![MySQL](https://img.shields.io/badge/-MySQL-blue)
-    ![MariaDB](https://img.shields.io/badge/-MariaDB-blue)
-		![MongoDB](https://img.shields.io/badge/-MongoDB-brightgreen)
-		![Redis](https://img.shields.io/badge/-Redis-red)
-		![Vue](https://img.shields.io/badge/-Vue-%2342b883)
-		<!-- ![React](https://img.shields.io/badge/-React-%231f232a) -->
 		![Docker](https://img.shields.io/badge/-Docker-0db7ed)
+    ![nginx](https://img.shields.io/badge/-nginx-brightgreen)
     
 		<br>		
 		[![algorithm_tier](http://mazassumnida.wtf/api/mini/generate_badge?boj=jig7357 'Platinum'){:onerror='this.src=`/assets/algorithm_tier.svg`'}](https://solved.ac/jig7357){:target='_blank'}
