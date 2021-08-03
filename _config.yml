@@ -78,8 +78,8 @@ menu:
     submenu:
       - title:           Develop
         url:             /develop/
-      - title:           Book
-        url:             /book/
+      - title:           Tip
+        url:             /tip/
       - title:           Guitar
         url:             /guitar/
   - title:             About
