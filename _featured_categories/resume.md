@@ -27,7 +27,7 @@ v210802
 
 <div class="collapsible-title" markdown="1">
 
-## Words in my Heart
+## Words in my Heart  << CLICK !
 
 </div>
 <div class="collapsible-body" markdown="1">
@@ -76,6 +76,7 @@ v210802
 
 ### In SSAFY
 #### STEW --- 캠 스터디 플랫폼
+[자세히](/project/2020-07-13-stew/)
 
 <div id="stew-carousel" class="swiper-container"></div>
 <script>
@@ -127,6 +128,8 @@ v210802
 ---
 
 #### Michin AI --- 인공지능 영어 공부 챗봇
+[자세히](/project/2020-08-31-michin-ai/)
+
 <div id="michinai-carousel" class="swiper-container"></div>
 <script>
   imgList = [];
