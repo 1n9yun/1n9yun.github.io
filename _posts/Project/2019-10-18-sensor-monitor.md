@@ -3,7 +3,7 @@ layout: post
 category: project
 title: Sensor Monitor - 고장 진단 프로그램
 description: >
-  --- 2019. 06. 21. ~ 2019. 10. 18.
+  --- 2019. 06. 21 ~ 2019. 10. 18
   <br>
   4학년 때 산학 협력 기업 인턴 중 진행한 프로젝트
   <br><br>
@@ -53,7 +53,7 @@ comments: true
 ### 구조
 ![Architecture](/assets/img/project/sensor-monitor/architecture.png)
 
-## 회고
+## 짧후기
 개발인력이 없어서 오랫동안 진행하지 못했던 사업인데 내가 인턴으로 들어오면서 이 프로젝트를 넘겨주셨는데...  
 한 번도 사용해 본적 없는 C#을 비롯해 WPF, MVVM, Android를 이용한 개발을 했습니다.  
 그래서 오래걸린듯..  

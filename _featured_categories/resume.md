@@ -27,7 +27,7 @@ v210802
 
 <div class="collapsible-title" markdown="1">
 
-## Words in my Heart  << CLICK !
+## Words in my Heart
 
 </div>
 <div class="collapsible-body" markdown="1">
