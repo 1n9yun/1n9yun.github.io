@@ -1,6 +1,6 @@
 ---
 layout: post
-category: tip
+category: log
 title: Tip
 description: >
   어떤 종류의 것이든 정리해두어야 겠다, 공유하면 좋겠다 싶은 것들을 정리합니다.

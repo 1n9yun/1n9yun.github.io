@@ -3,7 +3,7 @@ layout: post
 category: log
 title: Develop
 description: >
-  개발 중 있었던 이슈에 대해 정리합니다.
+  개발 이야기
 related_posts:
   - 
 addons:
