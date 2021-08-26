@@ -17,7 +17,7 @@ description: >
 # Exclude this example category from the sitemap.
 # DON'T USE THIS SETTING IN YOUR CATEGORIES!
 --- 
-# 정인균 --- On the road to be Backend Engineer
+# On the road to be Backend Engineer
 v210802
 <br><br>
 <span class="icon-mail"></span> **jig7357@gmail.com**  
@@ -25,21 +25,29 @@ v210802
 
 ---
 
-<div class="collapsible-title" markdown="1">
+## 🤔 Who am I?
 
-## Words in my Heart
+### 정인균 <sub>Ingyun Jeong</sub>
 
-</div>
-<div class="collapsible-body" markdown="1">
-- <span style="color: orangered">**자신감은 행동과 노력으로 증명되어야 한다**</span>
-- **행동하지 않는 당찬 포부는 시련을 만나지 못한 어설픈 자만일 뿐**
-- **나를 죽이지 못하는 고통은 나를 더 강하게 만들 뿐이다**
-- **멋있는 사람이 되자**
-- <span style="color: red">**제대로 하는 것은 끝이 없다. 그러나 제대로 해야 한다**</span>
-- <span style="color: dodgerblue">**흔들리는 벽엔 아무도 기댈 수 없다**</span>
-- **영향을 주는 사람이 되자**
-- **예리하게 벼려진 칼은 수 없이 내려쳐지고 담글질되어 만들어진다**
-</div>
+* 1996년 2월 17일에 청주에서 태어나 대학까지 졸업
+* 이후 대전을 거쳐 서울 거주 중
+* 당구, 노래 부르기 좋아함
+* 정이 많은 감수성 풍부한 집돌이
+*   <div class="collapsible-title" markdown="1">
+    [**Words in my Heart**](javascript:)
+
+    <div class="collapsible-body" markdown="1">
+    - <span style="color: orangered">**자신감은 행동과 노력으로 증명되어야 한다**</span>
+    - **행동하지 않는 당찬 포부는 시련을 만나지 못한 어설픈 자만일 뿐**
+    - **나를 죽이지 못하는 고통은 나를 더 강하게 만들 뿐이다**
+    - **멋있는 사람이 되자**
+    - <span style="color: red">**제대로 하는 것은 끝이 없다. 그러나 제대로 해야 한다**</span>
+    - <span style="color: dodgerblue">**흔들리는 벽엔 아무도 기댈 수 없다**</span>
+    - **영향을 주는 사람이 되자**
+    - **예리하게 벼려진 칼은 수 없이 내려쳐지고 담글질되어 만들어진다**
+    </div>
+    </div>
+
 <script>
     collapsibleInit();
 </script>
