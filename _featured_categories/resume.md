@@ -17,7 +17,7 @@ description: >
 # Exclude this example category from the sitemap.
 # DON'T USE THIS SETTING IN YOUR CATEGORIES!
 --- 
-# On the road to be Backend Engineer
+# On the road to be a backend engineer
 v211111
 <br><br>
 <span class="icon-mail"></span> **jig7357@gmail.com**  
@@ -66,7 +66,7 @@ v211111
 ## 🌎 Experiences
 
 * ![재직](https://img.shields.io/badge/-Current-green) **Toss Payments** --- (2021. 10 ~ )
-* ![정규직](https://img.shields.io/badge/-Full-Time-grey) **LG CNS** --- (2021. 05 ~ 2021. 09)
+* ![정규직](https://img.shields.io/badge/-Full_Time-grey) **LG CNS** --- (2021. 05 ~ 2021. 09)
 * ![인턴](https://img.shields.io/badge/-Intern-grey) **N Tech Service** --- (2021. 03 ~ 2021. 05)
 
 ---
