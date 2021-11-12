@@ -6,7 +6,7 @@ category:
 tags: 
   - jekyll
   - hydejack
-title: How I customized Hydejack(1) - Use LiveReload.
+title: How I customized Hydejack(1) - Use LiveReload
 description: >
   `windows` 환경 local에서 blog 작업 후 한 번에 반영하기로 하면서 `livereload`를 사용하고 싶었으나 hydejack starter kit bundle에 포함되어 있음에도 오류와 함께 실행되지 않았다.  
   그 해결 방법을 정리합니다.
