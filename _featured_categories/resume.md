@@ -18,7 +18,7 @@ description: >
 # DON'T USE THIS SETTING IN YOUR CATEGORIES!
 --- 
 # On the road to be Backend Engineer
-v210802
+v211111
 <br><br>
 <span class="icon-mail"></span> **jig7357@gmail.com**  
 <span class="icon-github"></span> **<https://github.com/1n9yun>**
@@ -43,8 +43,6 @@ v210802
     - **멋있는 사람이 되자**
     - <span style="color: red">**제대로 하는 것은 끝이 없다. 그러나 제대로 해야 한다**</span>
     - <span style="color: dodgerblue">**흔들리는 벽엔 아무도 기댈 수 없다**</span>
-    - **영향을 주는 사람이 되자**
-    - **예리하게 벼려진 칼은 수 없이 내려쳐지고 담글질되어 만들어진다**
     </div>
     </div>
 
@@ -67,20 +65,21 @@ v210802
 
 ## 🌎 Experiences
 
-* ![재직](https://img.shields.io/badge/-Current-green) **LG CNS** --- (2021. 05 ~ )
+* ![재직](https://img.shields.io/badge/-Current-green) **Toss Payments** --- (2021. 10 ~ )
+* ![정규직](https://img.shields.io/badge/-Full-Time-grey) **LG CNS** --- (2021. 05 ~ 2021. 09)
 * ![인턴](https://img.shields.io/badge/-Intern-grey) **N Tech Service** --- (2021. 03 ~ 2021. 05)
 
 ---
 
 ## 🔥 Projects
 
-### Refactoring
+<!-- ### Refactoring
 
 열정적이지만 부족했던 과거의 프로젝트 다시보기
 
-![inprogress](https://img.shields.io/badge/-in_progress-blue) **[STEW](/stew/)**
+![inprogress](https://img.shields.io/badge/-in_progress-blue) **[STEW](/stew/)** -->
 
----
+<!-- --- -->
 
 ### In SSAFY
 #### STEW --- 캠 스터디 플랫폼
