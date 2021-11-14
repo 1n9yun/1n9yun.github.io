@@ -47,6 +47,7 @@ const postJs = () => {
       `${JS_SRC}/utils/timeago.js`,
       `${JS_SRC}/utils/checkbox.js`,
       `${JS_SRC}/utils/clipboard.js`,
+      `${JS_SRC}/utils/collapsible.js`,
       // 'smooth-scroll.js' must be called after ToC is ready
       `${JS_SRC}/utils/smooth-scroll.js`
     ], 'post'
