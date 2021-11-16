@@ -8,9 +8,9 @@ $(function() {
         const isHidden = body.is(":hidden");
 
         header.html(`
-        <p>
+        <p style="cursor: pointer">
             <span class="collapsible-mark">${getHandShape(isHidden)}</span>
-            <span class="collapsible-title">${header.text()}</span>
+            <span class="collapsible-title">${header.html()}</span>
         </p>
         `);
 
