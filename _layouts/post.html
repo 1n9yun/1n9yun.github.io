@@ -115,7 +115,7 @@ layout: default
   {% assign enable_toc = false %}
 
   {% if site.toc and page.toc %}
-    {% if content contains '<h2' or content contains '<h3' %}
+    {% if content contains '<h2' or content contains '<h3' or content contains '<h4' or content contains '<h5' or content contains '<h6' %}
       {% assign enable_toc = true %}
     {% endif %}
   {% endif %}
