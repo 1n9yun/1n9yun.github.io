@@ -49,7 +49,7 @@ toc: true
 
 ---
 
-## 🔥 Projects
+<!-- ## 🔥 Projects -->
 
 <!-- ### Refactoring
 
@@ -59,7 +59,7 @@ toc: true
 
 <!-- --- -->
 
-### SSAFY
+<!-- ### SSAFY
 #### [STEW --- 캠 스터디 플랫폼](/posts/stew)
 #### [Michin AI --- 인공지능 영어 공부 챗봇](/posts/michin-ai)
-#### [POPO --- 개발자 포트폴리오 플랫폼](/posts/popo)
+#### [POPO --- 개발자 포트폴리오 플랫폼](/posts/popo) -->

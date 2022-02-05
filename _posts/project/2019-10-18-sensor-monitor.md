@@ -1,4 +1,4 @@
----
+<!-- ---
 title: Sensor Monitor
 author: 1n9yun
 date: 2019-10-18 09:00 +0900
@@ -115,4 +115,4 @@ while (!(TemperatureLine.Points[center].X <= HoverPointX &&
 따라서 소켓 연결을 유지함으로써 실시간 모니터링을 가능하게 했다.
 
 #### Install Wizard 배포
-**Visual Studio Intaller Project**를 이용하여 `LocalDB`, `재배포 패키지`등 필요한 **Dependency**를 포함한 설치 파일을 생성하여 배포를 완료하였다.
+**Visual Studio Intaller Project**를 이용하여 `LocalDB`, `재배포 패키지`등 필요한 **Dependency**를 포함한 설치 파일을 생성하여 배포를 완료하였다. -->
