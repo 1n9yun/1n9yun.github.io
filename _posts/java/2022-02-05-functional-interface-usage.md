@@ -16,7 +16,7 @@ mermaid: true
 ```java
 // query
 List<Entity> query(SearchCondition search, int page, int pageSize) {
-    // query within page
+    // query a page
 }
 
 // action
@@ -179,6 +179,7 @@ void batch() {
 ```
 
 이제 앞으로 batch 메서드처럼 사용하면 된다. 이전의 batch 메서드보다 훨씬 간단하다.
+
 action에서 리턴 값이 있다거나하면 알아서 커스터마이징하면 될 것 같다.
 
 끗
