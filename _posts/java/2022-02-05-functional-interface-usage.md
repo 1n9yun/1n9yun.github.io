@@ -162,7 +162,7 @@ static final int PAGE_SIZE = 10;
 
 // query
 List<Entity> query(SearchCondition search, Pageable pageable) {
-    // query within page
+    // query a page
 }
 
 // action
