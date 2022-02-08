@@ -51,13 +51,13 @@ google_site_verification: google_meta_tag_verification # change to your verifica
 
 # ↑ --------------------------
 
-
-google_analytics:
-  id: ''              # fill in your Google Analytics ID
-  # Google Analytics pageviews report settings
-  pv:
-    proxy_endpoint:   # fill in the Google Analytics superProxy endpoint of Google App Engine
-    cache_path:       # the local PV cache data, friendly to visitors from GFW region
+google_analytics: 'UA-185761117-1'
+# google_analytics:
+#   id:              # fill in your Google Analytics ID
+#   # Google Analytics pageviews report settings
+#   pv:
+#     proxy_endpoint:   # fill in the Google Analytics superProxy endpoint of Google App Engine
+#     cache_path:       # the local PV cache data, friendly to visitors from GFW region
 
 # Prefer color scheme setting.
 #
