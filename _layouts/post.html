@@ -132,10 +132,20 @@ layout: default
 
     {% include post-nav.html %}
 
-    {% if site.disqus.comments and page.comments %}
-      {% include disqus.html %}
+    {% if site.comments.provider == 'disqus' %}
+      {% if site.disqus.comments and page.comments %}
+        {% include disqus.html %}
+      {% endif %}
+    {% elsif site.comments.provider == 'utterances' %}
+      {% assign utterances = site.utterances %}
+      <script src="https://utteranc.es/client.js"
+          repo=           {{ utterances.repo }}
+          issue-term=     {{ utterances.issue-term }}
+          theme=          {{ utterances.theme }}
+          crossorigin=    "anonymous"
+          async>
+      </script>
     {% endif %}
-
     </div> <!-- #post-extend-wrapper -->
 
   </div> <!-- .col-* -->
