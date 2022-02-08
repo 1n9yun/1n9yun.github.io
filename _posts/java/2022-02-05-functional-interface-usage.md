@@ -1,5 +1,5 @@
 ---
-title: Java의 Functional Interface 활용해보기
+title: Java의 Functional Interface 활용해보기 (feat. 배치)
 author: 1n9yun
 date: 2022-02-05 17:50 +0900
 categories: [Java]
