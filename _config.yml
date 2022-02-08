@@ -95,6 +95,8 @@ disqus:
 utterances:
   repo:                "1n9yun/1n9yun.github.io"
   issue-term:          "pathname"
+  # default theme
+  # but depends on system setting and toggled theme
   theme:               "github-dark"
 
 paginate: 10
