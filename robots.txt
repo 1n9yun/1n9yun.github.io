@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://1n9yun.github.io/sitemap.xml
