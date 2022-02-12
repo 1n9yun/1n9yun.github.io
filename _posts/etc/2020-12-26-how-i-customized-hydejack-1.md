@@ -15,17 +15,12 @@ mermaid: true
 
 ## Prerequisite
 * [RubyInstaller](https://rubyinstaller.org/downloads/){:target="_blank"} 에서 `ruby+devkit` 설치  
-
-`ruby`에 대해 무지하므로 `gem`을 `npm`과 비교하여 이해하였습니다.
-따라서  
-`gem install` == `npm install -global`,
-`bundle install` == `npm install` 로 이해하였습니다.  
-또한 `bundle`은 `gem install bundler`를 통해 설치 후 사용 가능합니다.
+* `gem install bundler`로 `bundler` 설치
 {:.note}
 
 ## 원인
 
-* `livereload`는 `platform` 옵션으로 `ruby`, `x64-mingw32`를 적용해야 한다.
+* `livereload`설치 시 `platform` 옵션으로 `ruby`, `x64-mingw32`를 적용하고 있는데..
 * `Gemfile`의 `platform` 옵션이 제대로 적용되지 않는 것 같다.
 
 ## 시도한 방법
