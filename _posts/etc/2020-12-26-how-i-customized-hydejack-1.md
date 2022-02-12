@@ -35,6 +35,13 @@ mermaid: true
 * `%your_hydejack_path%\vendor\bundle\ruby\2.7.0\gems`에 `eventmachine-{version}-x64-mingw32`로 이름 변경 후 `CTRL+V`
 * `bundle exec jekyll serve --livereload` 실행 하면 정상적으로 동작하는 것을 확인 가능
 
+> hydejack에선 이렇게 해결했었으나 현재 테마에선 적용이 어려워 다른 방법을 찾았는데 매우 간단하다.
+> `Gemfile`에 
+  ```
+  gem 'eventmachine', '1.2.7', git: 'https://github.com/eventmachine/eventmachine', tag: 'v1.2.7'
+  ```
+  한 줄 추가해주면 된다.
+
 `_config.yml`는 자동 반영되지 않습니다.
 {:.note}
 
