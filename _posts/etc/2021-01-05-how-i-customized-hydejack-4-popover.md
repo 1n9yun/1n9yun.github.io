@@ -1,6 +1,6 @@
 ---
 title: How I customized Hydejack(4) - Sub Menu pop-over
-author: 1n9yun
+written_by: 1n9yun
 date: 2021-01-05 22:39 +0900
 categories: [Etc]
 tags: [hydejack, jekyll]

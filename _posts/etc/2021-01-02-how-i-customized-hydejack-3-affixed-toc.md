@@ -1,6 +1,6 @@
 ---
 title: How I customized Hydejack(3) - Affixed TOC
-author: 1n9yun
+written_by: 1n9yun
 date: 2021-01-02 23:08 +0900
 categories: [Etc]
 tags: [hydejack, jekyll]

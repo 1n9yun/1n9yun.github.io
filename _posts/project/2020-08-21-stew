@@ -1,6 +1,6 @@
 ---
 title: STEW - 캠 스터디 플랫폼
-author: 1n9yun
+written_by: 1n9yun
 date: 2020-08-21 09:00 +0900
 categories: [Project]
 tags: [springboot, webrtc, jwt, redis, docker, nginx, mysql]
@@ -17,23 +17,23 @@ data-pagination='{"el": ".swiper-pagination", "clickable": true}'
 data-navigation='{"nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev"}'
 data-lazy='{"loadPrevNext": true}'
 >
-  <img src="/assets/img/posts/project/stew/main.jpeg">
-  <img src="/assets/img/posts/project/stew/register-normal.jpeg">
-  <img src="/assets/img/posts/project/stew/register-social.jpeg">
-  <img src="/assets/img/posts/project/stew/login.jpeg">
-  <img src="/assets/img/posts/project/stew/study-list.jpeg">
-  <img src="/assets/img/posts/project/stew/study-list-search.jpeg">
-  <img src="/assets/img/posts/project/stew/study-participate.jpeg">
-  <img src="/assets/img/posts/project/stew/study-private-accept.jpeg">
-  <img src="/assets/img/posts/project/stew/study-create.jpeg">
-  <img src="/assets/img/posts/project/stew/study-detail-1.jpeg">
-  <img src="/assets/img/posts/project/stew/study-detail-2.jpeg">
-  <img src="/assets/img/posts/project/stew/cam-study-ready.jpeg">
-  <img src="/assets/img/posts/project/stew/cam-study.jpeg">
-  <img src="/assets/img/posts/project/stew/mypage-1.jpeg">
-  <img src="/assets/img/posts/project/stew/mypage-2.jpeg">
-  <img src="/assets/img/posts/project/stew/mypage-3.jpeg">
-  <img src="/assets/img/posts/project/stew/guide.jpeg">
+  <img src="{{ '/assets/img/posts/project/stew/main.jpeg' }}">
+  <img src="{{ '/assets/img/posts/project/stew/register-normal.jpeg' }}">
+  <img src="{{ '/assets/img/posts/project/stew/register-social.jpeg' }}">
+  <img src="{{ '/assets/img/posts/project/stew/login.jpeg' }}">
+  <img src="{{ '/assets/img/posts/project/stew/study-list.jpeg' }}">
+  <img src="{{ '/assets/img/posts/project/stew/study-list-search.jpeg' }}">
+  <img src="{{ '/assets/img/posts/project/stew/study-participate.jpeg' }}">
+  <img src="{{ '/assets/img/posts/project/stew/study-private-accept.jpeg' }}">
+  <img src="{{ '/assets/img/posts/project/stew/study-create.jpeg' }}">
+  <img src="{{ '/assets/img/posts/project/stew/study-detail-1.jpeg' }}">
+  <img src="{{ '/assets/img/posts/project/stew/study-detail-2.jpeg' }}">
+  <img src="{{ '/assets/img/posts/project/stew/cam-study-ready.jpeg' }}">
+  <img src="{{ '/assets/img/posts/project/stew/cam-study.jpeg' }}">
+  <img src="{{ '/assets/img/posts/project/stew/mypage-1.jpeg' }}">
+  <img src="{{ '/assets/img/posts/project/stew/mypage-2.jpeg' }}">
+  <img src="{{ '/assets/img/posts/project/stew/mypage-3.jpeg' }}">
+  <img src="{{ '/assets/img/posts/project/stew/guide.jpeg' }}">
 </div>
 
 ## TEAM 어묵간장

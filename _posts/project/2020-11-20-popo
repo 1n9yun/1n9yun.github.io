@@ -1,6 +1,6 @@
 ---
 title: POPO - 개발자 포트폴리오 제작 사이트
-author: 1n9yun
+written_by: 1n9yun
 date: 2020-11-20 09:00 +0900
 categories: [Project]
 tags: [springboot, mongodb, docker, nginx, jenkins]
@@ -17,13 +17,13 @@ data-pagination='{"el": ".swiper-pagination", "clickable": true}'
 data-navigation='{"nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev"}'
 data-lazy='{"loadPrevNext": true}'
 >
-  <img src="/assets/img/posts/project/popo/1.JPG">
-  <img src="/assets/img/posts/project/popo/2.JPG">
-  <img src="/assets/img/posts/project/popo/3.JPG">
-  <img src="/assets/img/posts/project/popo/4.JPG">
-  <img src="/assets/img/posts/project/popo/5.JPG">
-  <img src="/assets/img/posts/project/popo/6.JPG">
-  <img src="/assets/img/posts/project/popo/7.JPG">
+  <img src="{{ '/assets/img/posts/project/popo/1.JPG' }}">
+  <img src="{{ '/assets/img/posts/project/popo/2.JPG' }}">
+  <img src="{{ '/assets/img/posts/project/popo/3.JPG' }}">
+  <img src="{{ '/assets/img/posts/project/popo/4.JPG' }}">
+  <img src="{{ '/assets/img/posts/project/popo/5.JPG' }}">
+  <img src="{{ '/assets/img/posts/project/popo/6.JPG' }}">
+  <img src="{{ '/assets/img/posts/project/popo/7.JPG' }}">
 </div>
 
 ## TEAM JinaganTeam  

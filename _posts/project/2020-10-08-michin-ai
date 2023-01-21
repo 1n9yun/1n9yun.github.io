@@ -1,6 +1,6 @@
 ---
 title: 미국친구 AI - 인공지능 영어 공부 챗봇
-author: 1n9yun
+written_by: 1n9yun
 date: 2020-10-08 09:00 +0900
 categories: [Project]
 tags: [springboot, nodejs, async, pararellize]
@@ -18,18 +18,18 @@ data-navigation='{"nextEl": ".swiper-button-next", "prevEl": ".swiper-button-pre
 data-lazy='{"loadPrevNext": true}'
 data-size='30%'
 >
-  <img src="/assets/img/posts/project/michinai/1.png">
-  <img src="/assets/img/posts/project/michinai/2.png">
-  <img src="/assets/img/posts/project/michinai/3.png">
-  <img src="/assets/img/posts/project/michinai/4.png">
-  <img src="/assets/img/posts/project/michinai/5.png">
-  <img src="/assets/img/posts/project/michinai/6.png">
-  <img src="/assets/img/posts/project/michinai/7.png">
-  <img src="/assets/img/posts/project/michinai/8.png">
-  <img src="/assets/img/posts/project/michinai/9.png">
-  <img src="/assets/img/posts/project/michinai/10.png">
-  <img src="/assets/img/posts/project/michinai/11.png">
-  <img src="/assets/img/posts/project/michinai/12.png">
+  <img src="{{ '/assets/img/posts/project/michinai/1.png' }}">
+  <img src="{{ '/assets/img/posts/project/michinai/2.png' }}">
+  <img src="{{ '/assets/img/posts/project/michinai/3.png' }}">
+  <img src="{{ '/assets/img/posts/project/michinai/4.png' }}">
+  <img src="{{ '/assets/img/posts/project/michinai/5.png' }}">
+  <img src="{{ '/assets/img/posts/project/michinai/6.png' }}">
+  <img src="{{ '/assets/img/posts/project/michinai/7.png' }}">
+  <img src="{{ '/assets/img/posts/project/michinai/8.png' }}">
+  <img src="{{ '/assets/img/posts/project/michinai/9.png' }}">
+  <img src="{{ '/assets/img/posts/project/michinai/10.png' }}">
+  <img src="{{ '/assets/img/posts/project/michinai/11.png' }}">
+  <img src="{{ '/assets/img/posts/project/michinai/12.png' }}">
 </div>
 
 ## TEAM 3.14  

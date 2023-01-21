@@ -1,12 +1,11 @@
 ---
 title: How I customized Chirpy(1) - utterances 테마
-author: 1n9yun
+written_by: 1n9yun
 date: 2022-02-12 20:47 +0900
 categories: [Etc]
 tags: [jekyll, chirpy]
 mermaid: true
 ---
-
 ![utterances](/assets/img/posts/etc/customize-chirpy/utterances.gif)
 _블로그 테마 변경과 연동되는 utterances_
 

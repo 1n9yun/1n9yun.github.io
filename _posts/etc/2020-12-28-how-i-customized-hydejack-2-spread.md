@@ -1,6 +1,6 @@
 ---
 title: How I customized Hydejack(2) - Sub Menu 펼치기
-author: 1n9yun
+written_by: 1n9yun
 date: 2020-12-28 23:08 +0900
 categories: [Etc]
 tags: [hydejack, jekyll]

@@ -3,10 +3,6 @@ $(function() {
     return ($(container).data());
   }
 
-  function getSlideElement() {
-
-  }
-
   $(".swiper-container").each((index, swiperContainer) => {
     const swiperContainerNode = $(swiperContainer);
     const swiperOptions = getOptions(swiperContainerNode);
@@ -19,10 +15,10 @@ $(function() {
             <div class="swiper-lazy-preloader"></div>
         </div>`
     });
-    innerHTML += `</div>`;
     if(swiperOptions.dotted) innerHTML += `<div class="swiper-pagination"></div>`;
     innerHTML += `<div class="swiper-button-next"></div>`;
     innerHTML += `<div class="swiper-button-prev"></div>`;
+    innerHTML += `</div>`;
 
     swiperContainerNode.html(innerHTML);
 

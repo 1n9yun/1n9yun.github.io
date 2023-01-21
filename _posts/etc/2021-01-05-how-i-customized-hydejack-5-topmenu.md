@@ -1,6 +1,6 @@
 ---
 title: How I customized Hydejack(5) - Top Navigation
-author: 1n9yun
+written_by: 1n9yun
 date: 2021-01-05 22:40 +0900
 categories: [Etc]
 tags: [hydejack, jekyll]

@@ -1,6 +1,6 @@
 ---
 title: How I customized Hydejack(1) - Use LiveReload
-author: 1n9yun
+written_by: 1n9yun
 date: 2020-12-26 05:40 +0900
 categories: [Etc]
 tags: [hydejack, jekyll]
