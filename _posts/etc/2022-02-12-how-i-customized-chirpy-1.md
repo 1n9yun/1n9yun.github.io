@@ -6,7 +6,6 @@ categories: [Etc]
 tags: [jekyll, chirpy]
 mermaid: true
 ---
-
 ![utterances](/assets/img/posts/etc/customize-chirpy/utterances.gif)
 _블로그 테마 변경과 연동되는 utterances_
 
