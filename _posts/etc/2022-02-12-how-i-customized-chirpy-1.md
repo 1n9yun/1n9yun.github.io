@@ -5,7 +5,12 @@ date: 2022-02-12 20:47 +0900
 categories: [Etc]
 tags: [jekyll, chirpy]
 mermaid: true
+description:
+    hi
 ---
+> **Deprecated**  
+> 최신 버전을 사용하면 이 작업은 필요 없습니다.
+
 ![utterances](/assets/img/posts/etc/customize-chirpy/utterances.gif)
 _블로그 테마 변경과 연동되는 utterances_
 
