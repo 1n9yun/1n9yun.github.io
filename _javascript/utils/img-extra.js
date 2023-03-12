@@ -25,4 +25,6 @@
         $img.parent().removeClass('shimmer');
     });
 
+    // centerize markdown image
+    $('.img-link').parent().css('text-align', 'center');
 })();

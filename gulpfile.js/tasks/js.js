@@ -48,7 +48,9 @@ const postJs = () => {
       `${JS_SRC}/utils/locale-datetime.js`,
       `${JS_SRC}/utils/clipboard.js`,
       // 'smooth-scroll.js' must be called after ToC is ready
-      `${JS_SRC}/utils/smooth-scroll.js`
+      `${JS_SRC}/utils/smooth-scroll.js`,
+      `${JS_SRC}/utils/collapsible.js`,
+      `${JS_SRC}/utils/swiper-control.js`
     ], 'post'
   );
 };
@@ -84,11 +86,6 @@ const pvreportJs = () => {
   return concatJs(`${JS_SRC}/utils/pageviews.js`, 'pvreport');
 };
 
-// customize
-const collapsibleJs = () => {
-  return concatJs(`${JS_SRC}/utils/collapsible.js`, 'collapsible')
-}
-
 const buildJs = parallel(
   commonsJs, 
   homeJs, 
@@ -96,8 +93,7 @@ const buildJs = parallel(
   categoriesJs, 
   pageJs, 
   miscJs, 
-  pvreportJs,
-  collapsibleJs
+  pvreportJs
   );
 
 exports.build = series(buildJs, minifyJs);
