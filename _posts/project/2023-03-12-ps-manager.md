@@ -4,7 +4,7 @@ written_by: 1n9yun
 tags: [Algorithm]
 categories: [Project]
 ---
-[![MVP](/assets/img/posts/project/ps-manager/mvp.gif)](https://ps.ing-lab.kr/ps-manager/login){:target="_blank"}
+[![MVP](/assets/img/posts/project/ps-manager/mvp.gif)](https://ps.ing-lab.kr){:target="_blank"}
 _누르면 이동합니다._
 
 알고리즘 문제 뭐 풀까 고민하고 계신가요? 요거 푸세요!
