@@ -1,5 +1,5 @@
 ---
-title: 알고리즘 문제 이거 푸실래요?
+title: 알고리즘 문제 추천! 이거 푸실래요?
 written_by: 1n9yun
 tags: [Algorithm]
 categories: [Project]
