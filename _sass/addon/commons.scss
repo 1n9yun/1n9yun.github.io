@@ -1736,7 +1736,7 @@ $sidebar-display: "sidebar-display";
 // customize
 .img-link {
   + em {
-    display: block;
+    display: block; /* TODO 중복되는 부분 뺄 수 있나? */
     text-align: center;
     font-style: normal;
     font-size: 80%;
@@ -1746,5 +1746,16 @@ $sidebar-display: "sidebar-display";
 
   img:hover {
     opacity: 0.5;
+  }
+}
+
+iframe {
+  +.figcaption {
+    display: block;
+    text-align: center;
+    font-style: normal;
+    font-size: 80%;
+    padding: 0;
+    color: #6d6c6c;
   }
 }
